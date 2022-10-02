@@ -1,0 +1,63 @@
+icc pi-v7.c -g -Wall -std=c99 -O3 -fopenmp  -fno-inline -I.   -o pi-v7-omp -L. -lm 
+Welcome to Extrae 4.0.1
+Extrae: Detected GOMP version is 4.5
+Extrae: Detected and hooked OpenMP runtime: [Intel KMPC] [GNU GOMP]
+Extrae: OMP_NUM_THREADS set to 4
+Extrae: Parsing the configuration file (/Soft/PAR/extrae.xml) begins
+Extrae: Tracing package is located on $EXTRAE_HOME
+Extrae: Generating intermediate files for Paraver traces.
+Extrae: OpenMP routines will collect HW counters information.
+Extrae: User Function routines will collect HW counters information.
+Extrae: PAPI domain set to ALL for HWC set 1
+Extrae: HWC set 1 contains following counters < PAPI_TOT_CYC (0x8000003b) PAPI_TOT_INS (0x80000032) FP_ARITH:512B_PACKED_DOUBLE (0x40000024) > - never changes
+Extrae: Resource usage is disabled at flush buffer.
+Extrae: Memory usage is disabled at flush buffer.
+Extrae: Tracing buffer can hold 500000 events
+Extrae: Circular buffer disabled.
+Extrae: Dynamic memory instrumentation is disabled.
+Extrae: Basic I/O memory instrumentation is disabled.
+Extrae: System calls instrumentation is disabled.
+Extrae: Parsing the configuration file (/Soft/PAR/extrae.xml) has ended
+Extrae: Intermediate traces will be stored in /scratch/nas/1/par2107/lab2/pi
+Extrae: Tracing mode is set to: Detail.
+Extrae: Successfully initiated with 1 tasks and 4 threads
+
+Wall clock execution time  = 0.007616043 seconds
+Value of pi = 3.1415926536
+Extrae: Intermediate raw trace file created : /scratch/nas/1/par2107/lab2/pi/set-0/TRACE@boada-11.ac.upc.es.0000649405000000000000.mpit
+Extrae: Intermediate raw sym file created : /scratch/nas/1/par2107/lab2/pi/set-0/TRACE@boada-11.ac.upc.es.0000649405000000000000.sym
+Extrae: Intermediate raw trace file created : /scratch/nas/1/par2107/lab2/pi/set-0/TRACE@boada-11.ac.upc.es.0000649405000000000001.mpit
+Extrae: Intermediate raw trace file created : /scratch/nas/1/par2107/lab2/pi/set-0/TRACE@boada-11.ac.upc.es.0000649405000000000002.mpit
+Extrae: Intermediate raw trace file created : /scratch/nas/1/par2107/lab2/pi/set-0/TRACE@boada-11.ac.upc.es.0000649405000000000003.mpit
+Extrae: Deallocating memory.
+Extrae: Application has ended. Tracing has been terminated.
+mpi2prv: A total of 3 symbols were imported from TRACE.sym file
+mpi2prv: 0 function symbols imported
+mpi2prv: 3 HWC counter descriptions imported
+merger: Output trace format is: Paraver
+merger: Extrae 4.0.1
+mpi2prv: Assigned nodes < boada-11.ac.upc.es >
+mpi2prv: Assigned size per processor < <1 Mbyte >
+mpi2prv: File /scratch/nas/1/par2107/lab2/pi/set-0/TRACE@boada-11.ac.upc.es.0000649405000000000000.mpit is object 1.1.1 on node boada-11.ac.upc.es assigned to processor 0
+mpi2prv: File /scratch/nas/1/par2107/lab2/pi/set-0/TRACE@boada-11.ac.upc.es.0000649405000000000001.mpit is object 1.1.2 on node boada-11.ac.upc.es assigned to processor 0
+mpi2prv: File /scratch/nas/1/par2107/lab2/pi/set-0/TRACE@boada-11.ac.upc.es.0000649405000000000002.mpit is object 1.1.3 on node boada-11.ac.upc.es assigned to processor 0
+mpi2prv: File /scratch/nas/1/par2107/lab2/pi/set-0/TRACE@boada-11.ac.upc.es.0000649405000000000003.mpit is object 1.1.4 on node boada-11.ac.upc.es assigned to processor 0
+mpi2prv: Time synchronization has been turned off
+mpi2prv: Checking for target directory existence... exists, ok!
+mpi2prv: Selected output trace format is Paraver
+mpi2prv: Stored trace format is Paraver
+mpi2prv: Enabling Time Synchronization (Node).
+mpi2prv: Circular buffer enabled at tracing time? NO
+mpi2prv: Parsing intermediate files
+mpi2prv: Progress 1 of 2 ... 5% 10% 15% 21% 26% 31% 36% 42% 47% 52% 55% 60% 65% 71% 76% 81% 86% 92% 97% done
+mpi2prv: Processor 0 succeeded to translate its assigned files
+mpi2prv: Elapsed time translating files: 0 hours 0 minutes 0 seconds
+mpi2prv: Elapsed time sorting addresses: 0 hours 0 minutes 0 seconds
+mpi2prv: Generating tracefile (intermediate buffers of 1677696 events)
+         This process can take a while. Please, be patient.
+mpi2prv: Progress 2 of 2 ... 5% 10% 19% 20% 28% 34% 35% 43% 47% 51% 55% 60% 67% 71% 76% 80% 85% 90% 95% done
+mpi2prv: Elapsed time merge step: 0 hours 0 minutes 0 seconds
+mpi2prv: Resulting tracefile occupies 2280 bytes
+mpi2prv: Removing temporal files... done
+mpi2prv: Elapsed time removing temporal files: 0 hours 0 minutes 0 seconds
+mpi2prv: Congratulations! pi-v7-omp.prv has been generated.

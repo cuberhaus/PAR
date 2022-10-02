@@ -1,0 +1,5 @@
+
+ USAGE: ./submit-extrae.sh prog [options] 
+ prog -> Program name 
+ options -> num_iterations num_procs (default values: 100000 4)
+

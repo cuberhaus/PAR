@@ -1,0 +1,5 @@
+
+ USAGE: ./submit-omp.sh prog [options] 
+ prog -> Program name 
+ options -> num_iterations num_procs (default values: 100000000 4)
+

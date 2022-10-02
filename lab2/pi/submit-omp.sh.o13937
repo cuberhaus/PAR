@@ -1,0 +1,3 @@
+icc pi-v5.c -g -Wall -std=c99 -O3 -fopenmp  -fno-inline -I.   -o pi-v5-omp -L. -lm 
+Wall clock execution time  = 7.635893106 seconds
+Value of pi = 3.1415926536
