@@ -1,0 +1,412 @@
+rm -rf 3dfft_seq 3dfft_omp 3dfft_tar
+icc  -Wall -fno-inline -ffloat-store -g -O3 -fopenmp -finstrument-functions -rdynamic -I. -I/Soft/PAR/fftw3/include 3dfft_omp.c -o 3dfft_omp -L. /Soft/PAR/fftw3/lib/libfftw3f.a -lm
+Tracing 3dfft_omp with 1 threads
+Welcome to Extrae 4.0.1
+Extrae: Detected GOMP version is 4.5
+Extrae: Detected and hooked OpenMP runtime: [Intel KMPC] [GNU GOMP]
+Extrae: OMP_NUM_THREADS set to 1
+Extrae: Parsing the configuration file (/Soft/PAR/extrae.xml) begins
+Extrae: Tracing package is located on $EXTRAE_HOME
+Extrae: Generating intermediate files for Paraver traces.
+Extrae: OpenMP routines will collect HW counters information.
+Extrae: Number of user functions traced (XL runtime): 5
+Extrae: Number of user functions traced (GCC runtime): 5
+Extrae: User Function routines will collect HW counters information.
+Extrae: PAPI domain set to ALL for HWC set 1
+Extrae: HWC set 1 contains following counters < PAPI_TOT_CYC (0x8000003b) PAPI_TOT_INS (0x80000032) FP_ARITH:512B_PACKED_DOUBLE (0x40000024) > - never changes
+Extrae: Resource usage is disabled at flush buffer.
+Extrae: Memory usage is disabled at flush buffer.
+Extrae: Tracing buffer can hold 500000 events
+Extrae: Circular buffer disabled.
+Extrae: Dynamic memory instrumentation is disabled.
+Extrae: Basic I/O memory instrumentation is disabled.
+Extrae: System calls instrumentation is disabled.
+Extrae: Parsing the configuration file (/Soft/PAR/extrae.xml) has ended
+Extrae: Intermediate traces will be stored in /scratch/nas/1/par2107/lab1/3dfft
+Extrae: Tracing mode is set to: Detail.
+Extrae: Successfully initiated with 1 tasks and 1 threads
+
+3D FFT Plan Generation:0.000620s
+Init Complex Grid FFT3D:0.224225s
+Execution FFT3D:1.061758s
+Extrae: Intermediate raw trace file created : /scratch/nas/1/par2107/lab1/3dfft/set-0/TRACE@boada-11.ac.upc.es.0001272023000000000000.mpit
+Extrae: Intermediate raw sym file created : /scratch/nas/1/par2107/lab1/3dfft/set-0/TRACE@boada-11.ac.upc.es.0001272023000000000000.sym
+Extrae: Deallocating memory.
+Extrae: Application has ended. Tracing has been terminated.
+mpi2prv: A total of 3 symbols were imported from TRACE.sym file
+mpi2prv: 0 function symbols imported
+mpi2prv: 3 HWC counter descriptions imported
+merger: Output trace format is: Paraver
+merger: Extrae 4.0.1
+mpi2prv: Assigned nodes < boada-11.ac.upc.es >
+mpi2prv: Assigned size per processor < <1 Mbyte >
+mpi2prv: File /scratch/nas/1/par2107/lab1/3dfft/set-0/TRACE@boada-11.ac.upc.es.0001272023000000000000.mpit is object 1.1.1 on node boada-11.ac.upc.es assigned to processor 0
+mpi2prv: Time synchronization has been turned off
+mpi2prv: Checking for target directory existence... exists, ok!
+mpi2prv: Selected output trace format is Paraver
+mpi2prv: Stored trace format is Paraver
+mpi2prv: Enabling Time Synchronization (Node).
+mpi2prv: Circular buffer enabled at tracing time? NO
+mpi2prv: Parsing intermediate files
+mpi2prv: Progress 1 of 2 ... 5% 10% 15% 20% 25% 30% 35% 40% 45% 50% 55% 60% 65% 70% 75% 80% 85% 90% 95% done
+mpi2prv: Processor 0 succeeded to translate its assigned files
+mpi2prv: Elapsed time translating files: 0 hours 0 minutes 0 seconds
+mpi2prv: Elapsed time sorting addresses: 0 hours 0 minutes 0 seconds
+mpi2prv: Generating tracefile (intermediate buffers of 6710784 events)
+         This process can take a while. Please, be patient.
+mpi2prv: Progress 2 of 2 ... 5% 10% 15% 20% 25% 30% 35% 40% 45% 50% 55% 60% 65% 70% 75% 80% 85% 90% 95% done
+mpi2prv: Elapsed time merge step: 0 hours 0 minutes 0 seconds
+mpi2prv: Resulting tracefile occupies 33725 bytes
+mpi2prv: Removing temporal files... done
+mpi2prv: Elapsed time removing temporal files: 0 hours 0 minutes 0 seconds
+mpi2prv: Congratulations! 3dfft_omp-strong-extrae/3dfft_omp-1-boada-11.prv has been generated.
+Tracing 3dfft_omp with 4 threads
+Welcome to Extrae 4.0.1
+Extrae: Detected GOMP version is 4.5
+Extrae: Detected and hooked OpenMP runtime: [Intel KMPC] [GNU GOMP]
+Extrae: OMP_NUM_THREADS set to 4
+Extrae: Parsing the configuration file (/Soft/PAR/extrae.xml) begins
+Extrae: Tracing package is located on $EXTRAE_HOME
+Extrae: Generating intermediate files for Paraver traces.
+Extrae: OpenMP routines will collect HW counters information.
+Extrae: Number of user functions traced (XL runtime): 5
+Extrae: Number of user functions traced (GCC runtime): 5
+Extrae: User Function routines will collect HW counters information.
+Extrae: PAPI domain set to ALL for HWC set 1
+Extrae: HWC set 1 contains following counters < PAPI_TOT_CYC (0x8000003b) PAPI_TOT_INS (0x80000032) FP_ARITH:512B_PACKED_DOUBLE (0x40000024) > - never changes
+Extrae: Resource usage is disabled at flush buffer.
+Extrae: Memory usage is disabled at flush buffer.
+Extrae: Tracing buffer can hold 500000 events
+Extrae: Circular buffer disabled.
+Extrae: Dynamic memory instrumentation is disabled.
+Extrae: Basic I/O memory instrumentation is disabled.
+Extrae: System calls instrumentation is disabled.
+Extrae: Parsing the configuration file (/Soft/PAR/extrae.xml) has ended
+Extrae: Intermediate traces will be stored in /scratch/nas/1/par2107/lab1/3dfft
+Extrae: Tracing mode is set to: Detail.
+Extrae: Successfully initiated with 1 tasks and 4 threads
+
+3D FFT Plan Generation:0.000340s
+Init Complex Grid FFT3D:0.211127s
+Execution FFT3D:0.340009s
+Extrae: Intermediate raw trace file created : /scratch/nas/1/par2107/lab1/3dfft/set-0/TRACE@boada-11.ac.upc.es.0001272048000000000000.mpit
+Extrae: Intermediate raw sym file created : /scratch/nas/1/par2107/lab1/3dfft/set-0/TRACE@boada-11.ac.upc.es.0001272048000000000000.sym
+Extrae: Intermediate raw trace file created : /scratch/nas/1/par2107/lab1/3dfft/set-0/TRACE@boada-11.ac.upc.es.0001272048000000000001.mpit
+Extrae: Intermediate raw trace file created : /scratch/nas/1/par2107/lab1/3dfft/set-0/TRACE@boada-11.ac.upc.es.0001272048000000000002.mpit
+Extrae: Intermediate raw trace file created : /scratch/nas/1/par2107/lab1/3dfft/set-0/TRACE@boada-11.ac.upc.es.0001272048000000000003.mpit
+Extrae: Deallocating memory.
+Extrae: Application has ended. Tracing has been terminated.
+mpi2prv: A total of 3 symbols were imported from TRACE.sym file
+mpi2prv: 0 function symbols imported
+mpi2prv: 3 HWC counter descriptions imported
+merger: Output trace format is: Paraver
+merger: Extrae 4.0.1
+mpi2prv: Assigned nodes < boada-11.ac.upc.es >
+mpi2prv: Assigned size per processor < <1 Mbyte >
+mpi2prv: File /scratch/nas/1/par2107/lab1/3dfft/set-0/TRACE@boada-11.ac.upc.es.0001272048000000000000.mpit is object 1.1.1 on node boada-11.ac.upc.es assigned to processor 0
+mpi2prv: File /scratch/nas/1/par2107/lab1/3dfft/set-0/TRACE@boada-11.ac.upc.es.0001272048000000000001.mpit is object 1.1.2 on node boada-11.ac.upc.es assigned to processor 0
+mpi2prv: File /scratch/nas/1/par2107/lab1/3dfft/set-0/TRACE@boada-11.ac.upc.es.0001272048000000000002.mpit is object 1.1.3 on node boada-11.ac.upc.es assigned to processor 0
+mpi2prv: File /scratch/nas/1/par2107/lab1/3dfft/set-0/TRACE@boada-11.ac.upc.es.0001272048000000000003.mpit is object 1.1.4 on node boada-11.ac.upc.es assigned to processor 0
+mpi2prv: Time synchronization has been turned off
+mpi2prv: Checking for target directory existence... exists, ok!
+mpi2prv: Selected output trace format is Paraver
+mpi2prv: Stored trace format is Paraver
+mpi2prv: Enabling Time Synchronization (Node).
+mpi2prv: Circular buffer enabled at tracing time? NO
+mpi2prv: Parsing intermediate files
+mpi2prv: Progress 1 of 2 ... 5% 10% 15% 20% 25% 30% 35% 40% 45% 50% 55% 60% 65% 70% 75% 80% 85% 90% 95% done
+mpi2prv: Processor 0 succeeded to translate its assigned files
+mpi2prv: Elapsed time translating files: 0 hours 0 minutes 0 seconds
+mpi2prv: Elapsed time sorting addresses: 0 hours 0 minutes 0 seconds
+mpi2prv: Generating tracefile (intermediate buffers of 1677696 events)
+         This process can take a while. Please, be patient.
+mpi2prv: Progress 2 of 2 ... 5% 10% 15% 20% 25% 30% 35% 40% 45% 50% 55% 60% 65% 70% 75% 80% 85% 90% 95% done
+mpi2prv: Elapsed time merge step: 0 hours 0 minutes 0 seconds
+mpi2prv: Resulting tracefile occupies 96993 bytes
+mpi2prv: Removing temporal files... done
+mpi2prv: Elapsed time removing temporal files: 0 hours 0 minutes 0 seconds
+mpi2prv: Congratulations! 3dfft_omp-strong-extrae/3dfft_omp-4-boada-11.prv has been generated.
+Tracing 3dfft_omp with 8 threads
+Welcome to Extrae 4.0.1
+Extrae: Detected GOMP version is 4.5
+Extrae: Detected and hooked OpenMP runtime: [Intel KMPC] [GNU GOMP]
+Extrae: OMP_NUM_THREADS set to 8
+Extrae: Parsing the configuration file (/Soft/PAR/extrae.xml) begins
+Extrae: Tracing package is located on $EXTRAE_HOME
+Extrae: Generating intermediate files for Paraver traces.
+Extrae: OpenMP routines will collect HW counters information.
+Extrae: Number of user functions traced (XL runtime): 5
+Extrae: Number of user functions traced (GCC runtime): 5
+Extrae: User Function routines will collect HW counters information.
+Extrae: PAPI domain set to ALL for HWC set 1
+Extrae: HWC set 1 contains following counters < PAPI_TOT_CYC (0x8000003b) PAPI_TOT_INS (0x80000032) FP_ARITH:512B_PACKED_DOUBLE (0x40000024) > - never changes
+Extrae: Resource usage is disabled at flush buffer.
+Extrae: Memory usage is disabled at flush buffer.
+Extrae: Tracing buffer can hold 500000 events
+Extrae: Circular buffer disabled.
+Extrae: Dynamic memory instrumentation is disabled.
+Extrae: Basic I/O memory instrumentation is disabled.
+Extrae: System calls instrumentation is disabled.
+Extrae: Parsing the configuration file (/Soft/PAR/extrae.xml) has ended
+Extrae: Intermediate traces will be stored in /scratch/nas/1/par2107/lab1/3dfft
+Extrae: Tracing mode is set to: Detail.
+Extrae: Successfully initiated with 1 tasks and 8 threads
+
+3D FFT Plan Generation:0.000339s
+Init Complex Grid FFT3D:0.237073s
+Execution FFT3D:0.216196s
+Extrae: Intermediate raw trace file created : /scratch/nas/1/par2107/lab1/3dfft/set-0/TRACE@boada-11.ac.upc.es.0001272077000000000000.mpit
+Extrae: Intermediate raw sym file created : /scratch/nas/1/par2107/lab1/3dfft/set-0/TRACE@boada-11.ac.upc.es.0001272077000000000000.sym
+Extrae: Intermediate raw trace file created : /scratch/nas/1/par2107/lab1/3dfft/set-0/TRACE@boada-11.ac.upc.es.0001272077000000000001.mpit
+Extrae: Intermediate raw trace file created : /scratch/nas/1/par2107/lab1/3dfft/set-0/TRACE@boada-11.ac.upc.es.0001272077000000000002.mpit
+Extrae: Intermediate raw trace file created : /scratch/nas/1/par2107/lab1/3dfft/set-0/TRACE@boada-11.ac.upc.es.0001272077000000000003.mpit
+Extrae: Intermediate raw trace file created : /scratch/nas/1/par2107/lab1/3dfft/set-0/TRACE@boada-11.ac.upc.es.0001272077000000000004.mpit
+Extrae: Intermediate raw trace file created : /scratch/nas/1/par2107/lab1/3dfft/set-0/TRACE@boada-11.ac.upc.es.0001272077000000000005.mpit
+Extrae: Intermediate raw trace file created : /scratch/nas/1/par2107/lab1/3dfft/set-0/TRACE@boada-11.ac.upc.es.0001272077000000000006.mpit
+Extrae: Intermediate raw trace file created : /scratch/nas/1/par2107/lab1/3dfft/set-0/TRACE@boada-11.ac.upc.es.0001272077000000000007.mpit
+Extrae: Deallocating memory.
+Extrae: Application has ended. Tracing has been terminated.
+mpi2prv: A total of 3 symbols were imported from TRACE.sym file
+mpi2prv: 0 function symbols imported
+mpi2prv: 3 HWC counter descriptions imported
+merger: Output trace format is: Paraver
+merger: Extrae 4.0.1
+mpi2prv: Assigned nodes < boada-11.ac.upc.es >
+mpi2prv: Assigned size per processor < <1 Mbyte >
+mpi2prv: File /scratch/nas/1/par2107/lab1/3dfft/set-0/TRACE@boada-11.ac.upc.es.0001272077000000000000.mpit is object 1.1.1 on node boada-11.ac.upc.es assigned to processor 0
+mpi2prv: File /scratch/nas/1/par2107/lab1/3dfft/set-0/TRACE@boada-11.ac.upc.es.0001272077000000000001.mpit is object 1.1.2 on node boada-11.ac.upc.es assigned to processor 0
+mpi2prv: File /scratch/nas/1/par2107/lab1/3dfft/set-0/TRACE@boada-11.ac.upc.es.0001272077000000000002.mpit is object 1.1.3 on node boada-11.ac.upc.es assigned to processor 0
+mpi2prv: File /scratch/nas/1/par2107/lab1/3dfft/set-0/TRACE@boada-11.ac.upc.es.0001272077000000000003.mpit is object 1.1.4 on node boada-11.ac.upc.es assigned to processor 0
+mpi2prv: File /scratch/nas/1/par2107/lab1/3dfft/set-0/TRACE@boada-11.ac.upc.es.0001272077000000000004.mpit is object 1.1.5 on node boada-11.ac.upc.es assigned to processor 0
+mpi2prv: File /scratch/nas/1/par2107/lab1/3dfft/set-0/TRACE@boada-11.ac.upc.es.0001272077000000000005.mpit is object 1.1.6 on node boada-11.ac.upc.es assigned to processor 0
+mpi2prv: File /scratch/nas/1/par2107/lab1/3dfft/set-0/TRACE@boada-11.ac.upc.es.0001272077000000000006.mpit is object 1.1.7 on node boada-11.ac.upc.es assigned to processor 0
+mpi2prv: File /scratch/nas/1/par2107/lab1/3dfft/set-0/TRACE@boada-11.ac.upc.es.0001272077000000000007.mpit is object 1.1.8 on node boada-11.ac.upc.es assigned to processor 0
+mpi2prv: Time synchronization has been turned off
+mpi2prv: Checking for target directory existence... exists, ok!
+mpi2prv: Selected output trace format is Paraver
+mpi2prv: Stored trace format is Paraver
+mpi2prv: Enabling Time Synchronization (Node).
+mpi2prv: Circular buffer enabled at tracing time? NO
+mpi2prv: Parsing intermediate files
+mpi2prv: Progress 1 of 2 ... 5% 10% 15% 20% 25% 30% 35% 40% 45% 50% 55% 60% 65% 70% 75% 80% 85% 90% 95% done
+mpi2prv: Processor 0 succeeded to translate its assigned files
+mpi2prv: Elapsed time translating files: 0 hours 0 minutes 0 seconds
+mpi2prv: Elapsed time sorting addresses: 0 hours 0 minutes 0 seconds
+mpi2prv: Generating tracefile (intermediate buffers of 838848 events)
+         This process can take a while. Please, be patient.
+mpi2prv: Progress 2 of 2 ... 5% 10% 15% 20% 25% 30% 35% 40% 45% 50% 55% 60% 65% 70% 75% 80% 85% 90% 95% done
+mpi2prv: Elapsed time merge step: 0 hours 0 minutes 0 seconds
+mpi2prv: Resulting tracefile occupies 181763 bytes
+mpi2prv: Removing temporal files... done
+mpi2prv: Elapsed time removing temporal files: 0 hours 0 minutes 0 seconds
+mpi2prv: Congratulations! 3dfft_omp-strong-extrae/3dfft_omp-8-boada-11.prv has been generated.
+Tracing 3dfft_omp with 12 threads
+Welcome to Extrae 4.0.1
+Extrae: Detected GOMP version is 4.5
+Extrae: Detected and hooked OpenMP runtime: [Intel KMPC] [GNU GOMP]
+Extrae: OMP_NUM_THREADS set to 12
+Extrae: Parsing the configuration file (/Soft/PAR/extrae.xml) begins
+Extrae: Tracing package is located on $EXTRAE_HOME
+Extrae: Generating intermediate files for Paraver traces.
+Extrae: OpenMP routines will collect HW counters information.
+Extrae: Number of user functions traced (XL runtime): 5
+Extrae: Number of user functions traced (GCC runtime): 5
+Extrae: User Function routines will collect HW counters information.
+Extrae: PAPI domain set to ALL for HWC set 1
+Extrae: HWC set 1 contains following counters < PAPI_TOT_CYC (0x8000003b) PAPI_TOT_INS (0x80000032) FP_ARITH:512B_PACKED_DOUBLE (0x40000024) > - never changes
+Extrae: Resource usage is disabled at flush buffer.
+Extrae: Memory usage is disabled at flush buffer.
+Extrae: Tracing buffer can hold 500000 events
+Extrae: Circular buffer disabled.
+Extrae: Dynamic memory instrumentation is disabled.
+Extrae: Basic I/O memory instrumentation is disabled.
+Extrae: System calls instrumentation is disabled.
+Extrae: Parsing the configuration file (/Soft/PAR/extrae.xml) has ended
+Extrae: Intermediate traces will be stored in /scratch/nas/1/par2107/lab1/3dfft
+Extrae: Tracing mode is set to: Detail.
+Extrae: Successfully initiated with 1 tasks and 12 threads
+
+3D FFT Plan Generation:0.000353s
+Init Complex Grid FFT3D:0.223112s
+Execution FFT3D:0.166508s
+Extrae: Intermediate raw trace file created : /scratch/nas/1/par2107/lab1/3dfft/set-0/TRACE@boada-11.ac.upc.es.0001272110000000000000.mpit
+Extrae: Intermediate raw sym file created : /scratch/nas/1/par2107/lab1/3dfft/set-0/TRACE@boada-11.ac.upc.es.0001272110000000000000.sym
+Extrae: Intermediate raw trace file created : /scratch/nas/1/par2107/lab1/3dfft/set-0/TRACE@boada-11.ac.upc.es.0001272110000000000001.mpit
+Extrae: Intermediate raw trace file created : /scratch/nas/1/par2107/lab1/3dfft/set-0/TRACE@boada-11.ac.upc.es.0001272110000000000002.mpit
+Extrae: Intermediate raw trace file created : /scratch/nas/1/par2107/lab1/3dfft/set-0/TRACE@boada-11.ac.upc.es.0001272110000000000003.mpit
+Extrae: Intermediate raw trace file created : /scratch/nas/1/par2107/lab1/3dfft/set-0/TRACE@boada-11.ac.upc.es.0001272110000000000004.mpit
+Extrae: Intermediate raw trace file created : /scratch/nas/1/par2107/lab1/3dfft/set-0/TRACE@boada-11.ac.upc.es.0001272110000000000005.mpit
+Extrae: Intermediate raw trace file created : /scratch/nas/1/par2107/lab1/3dfft/set-0/TRACE@boada-11.ac.upc.es.0001272110000000000006.mpit
+Extrae: Intermediate raw trace file created : /scratch/nas/1/par2107/lab1/3dfft/set-0/TRACE@boada-11.ac.upc.es.0001272110000000000007.mpit
+Extrae: Intermediate raw trace file created : /scratch/nas/1/par2107/lab1/3dfft/set-0/TRACE@boada-11.ac.upc.es.0001272110000000000008.mpit
+Extrae: Intermediate raw trace file created : /scratch/nas/1/par2107/lab1/3dfft/set-0/TRACE@boada-11.ac.upc.es.0001272110000000000009.mpit
+Extrae: Intermediate raw trace file created : /scratch/nas/1/par2107/lab1/3dfft/set-0/TRACE@boada-11.ac.upc.es.0001272110000000000010.mpit
+Extrae: Intermediate raw trace file created : /scratch/nas/1/par2107/lab1/3dfft/set-0/TRACE@boada-11.ac.upc.es.0001272110000000000011.mpit
+Extrae: Deallocating memory.
+Extrae: Application has ended. Tracing has been terminated.
+mpi2prv: A total of 3 symbols were imported from TRACE.sym file
+mpi2prv: 0 function symbols imported
+mpi2prv: 3 HWC counter descriptions imported
+merger: Output trace format is: Paraver
+merger: Extrae 4.0.1
+mpi2prv: Assigned nodes < boada-11.ac.upc.es >
+mpi2prv: Assigned size per processor < <1 Mbyte >
+mpi2prv: File /scratch/nas/1/par2107/lab1/3dfft/set-0/TRACE@boada-11.ac.upc.es.0001272110000000000000.mpit is object 1.1.1 on node boada-11.ac.upc.es assigned to processor 0
+mpi2prv: File /scratch/nas/1/par2107/lab1/3dfft/set-0/TRACE@boada-11.ac.upc.es.0001272110000000000001.mpit is object 1.1.2 on node boada-11.ac.upc.es assigned to processor 0
+mpi2prv: File /scratch/nas/1/par2107/lab1/3dfft/set-0/TRACE@boada-11.ac.upc.es.0001272110000000000002.mpit is object 1.1.3 on node boada-11.ac.upc.es assigned to processor 0
+mpi2prv: File /scratch/nas/1/par2107/lab1/3dfft/set-0/TRACE@boada-11.ac.upc.es.0001272110000000000003.mpit is object 1.1.4 on node boada-11.ac.upc.es assigned to processor 0
+mpi2prv: File /scratch/nas/1/par2107/lab1/3dfft/set-0/TRACE@boada-11.ac.upc.es.0001272110000000000004.mpit is object 1.1.5 on node boada-11.ac.upc.es assigned to processor 0
+mpi2prv: File /scratch/nas/1/par2107/lab1/3dfft/set-0/TRACE@boada-11.ac.upc.es.0001272110000000000005.mpit is object 1.1.6 on node boada-11.ac.upc.es assigned to processor 0
+mpi2prv: File /scratch/nas/1/par2107/lab1/3dfft/set-0/TRACE@boada-11.ac.upc.es.0001272110000000000006.mpit is object 1.1.7 on node boada-11.ac.upc.es assigned to processor 0
+mpi2prv: File /scratch/nas/1/par2107/lab1/3dfft/set-0/TRACE@boada-11.ac.upc.es.0001272110000000000007.mpit is object 1.1.8 on node boada-11.ac.upc.es assigned to processor 0
+mpi2prv: File /scratch/nas/1/par2107/lab1/3dfft/set-0/TRACE@boada-11.ac.upc.es.0001272110000000000008.mpit is object 1.1.9 on node boada-11.ac.upc.es assigned to processor 0
+mpi2prv: File /scratch/nas/1/par2107/lab1/3dfft/set-0/TRACE@boada-11.ac.upc.es.0001272110000000000009.mpit is object 1.1.10 on node boada-11.ac.upc.es assigned to processor 0
+mpi2prv: File /scratch/nas/1/par2107/lab1/3dfft/set-0/TRACE@boada-11.ac.upc.es.0001272110000000000010.mpit is object 1.1.11 on node boada-11.ac.upc.es assigned to processor 0
+mpi2prv: File /scratch/nas/1/par2107/lab1/3dfft/set-0/TRACE@boada-11.ac.upc.es.0001272110000000000011.mpit is object 1.1.12 on node boada-11.ac.upc.es assigned to processor 0
+mpi2prv: Time synchronization has been turned off
+mpi2prv: Checking for target directory existence... exists, ok!
+mpi2prv: Selected output trace format is Paraver
+mpi2prv: Stored trace format is Paraver
+mpi2prv: Enabling Time Synchronization (Node).
+mpi2prv: Circular buffer enabled at tracing time? NO
+mpi2prv: Parsing intermediate files
+mpi2prv: Progress 1 of 2 ... 5% 10% 15% 20% 25% 30% 35% 40% 45% 50% 55% 60% 65% 70% 75% 80% 85% 90% 95% done
+mpi2prv: Processor 0 succeeded to translate its assigned files
+mpi2prv: Elapsed time translating files: 0 hours 0 minutes 0 seconds
+mpi2prv: Elapsed time sorting addresses: 0 hours 0 minutes 0 seconds
+mpi2prv: Generating tracefile (intermediate buffers of 559232 events)
+         This process can take a while. Please, be patient.
+mpi2prv: Progress 2 of 2 ... 5% 10% 15% 20% 25% 30% 35% 40% 45% 50% 55% 60% 65% 70% 75% 80% 85% 90% 95% done
+mpi2prv: Elapsed time merge step: 0 hours 0 minutes 0 seconds
+mpi2prv: Resulting tracefile occupies 268967 bytes
+mpi2prv: Removing temporal files... done
+mpi2prv: Elapsed time removing temporal files: 0 hours 0 minutes 0 seconds
+mpi2prv: Congratulations! 3dfft_omp-strong-extrae/3dfft_omp-12-boada-11.prv has been generated.
+Tracing 3dfft_omp with 16 threads
+Welcome to Extrae 4.0.1
+Extrae: Detected GOMP version is 4.5
+Extrae: Detected and hooked OpenMP runtime: [Intel KMPC] [GNU GOMP]
+Extrae: OMP_NUM_THREADS set to 16
+Extrae: Parsing the configuration file (/Soft/PAR/extrae.xml) begins
+Extrae: Tracing package is located on $EXTRAE_HOME
+Extrae: Generating intermediate files for Paraver traces.
+Extrae: OpenMP routines will collect HW counters information.
+Extrae: Number of user functions traced (XL runtime): 5
+Extrae: Number of user functions traced (GCC runtime): 5
+Extrae: User Function routines will collect HW counters information.
+Extrae: PAPI domain set to ALL for HWC set 1
+Extrae: HWC set 1 contains following counters < PAPI_TOT_CYC (0x8000003b) PAPI_TOT_INS (0x80000032) FP_ARITH:512B_PACKED_DOUBLE (0x40000024) > - never changes
+Extrae: Resource usage is disabled at flush buffer.
+Extrae: Memory usage is disabled at flush buffer.
+Extrae: Tracing buffer can hold 500000 events
+Extrae: Circular buffer disabled.
+Extrae: Dynamic memory instrumentation is disabled.
+Extrae: Basic I/O memory instrumentation is disabled.
+Extrae: System calls instrumentation is disabled.
+Extrae: Parsing the configuration file (/Soft/PAR/extrae.xml) has ended
+Extrae: Intermediate traces will be stored in /scratch/nas/1/par2107/lab1/3dfft
+Extrae: Tracing mode is set to: Detail.
+Extrae: Successfully initiated with 1 tasks and 16 threads
+
+3D FFT Plan Generation:0.000369s
+Init Complex Grid FFT3D:0.240545s
+Execution FFT3D:0.140716s
+Extrae: Intermediate raw trace file created : /scratch/nas/1/par2107/lab1/3dfft/set-0/TRACE@boada-11.ac.upc.es.0001272147000000000000.mpit
+Extrae: Intermediate raw sym file created : /scratch/nas/1/par2107/lab1/3dfft/set-0/TRACE@boada-11.ac.upc.es.0001272147000000000000.sym
+Extrae: Intermediate raw trace file created : /scratch/nas/1/par2107/lab1/3dfft/set-0/TRACE@boada-11.ac.upc.es.0001272147000000000001.mpit
+Extrae: Intermediate raw trace file created : /scratch/nas/1/par2107/lab1/3dfft/set-0/TRACE@boada-11.ac.upc.es.0001272147000000000002.mpit
+Extrae: Intermediate raw trace file created : /scratch/nas/1/par2107/lab1/3dfft/set-0/TRACE@boada-11.ac.upc.es.0001272147000000000003.mpit
+Extrae: Intermediate raw trace file created : /scratch/nas/1/par2107/lab1/3dfft/set-0/TRACE@boada-11.ac.upc.es.0001272147000000000004.mpit
+Extrae: Intermediate raw trace file created : /scratch/nas/1/par2107/lab1/3dfft/set-0/TRACE@boada-11.ac.upc.es.0001272147000000000005.mpit
+Extrae: Intermediate raw trace file created : /scratch/nas/1/par2107/lab1/3dfft/set-0/TRACE@boada-11.ac.upc.es.0001272147000000000006.mpit
+Extrae: Intermediate raw trace file created : /scratch/nas/1/par2107/lab1/3dfft/set-0/TRACE@boada-11.ac.upc.es.0001272147000000000007.mpit
+Extrae: Intermediate raw trace file created : /scratch/nas/1/par2107/lab1/3dfft/set-0/TRACE@boada-11.ac.upc.es.0001272147000000000008.mpit
+Extrae: Intermediate raw trace file created : /scratch/nas/1/par2107/lab1/3dfft/set-0/TRACE@boada-11.ac.upc.es.0001272147000000000009.mpit
+Extrae: Intermediate raw trace file created : /scratch/nas/1/par2107/lab1/3dfft/set-0/TRACE@boada-11.ac.upc.es.0001272147000000000010.mpit
+Extrae: Intermediate raw trace file created : /scratch/nas/1/par2107/lab1/3dfft/set-0/TRACE@boada-11.ac.upc.es.0001272147000000000011.mpit
+Extrae: Intermediate raw trace file created : /scratch/nas/1/par2107/lab1/3dfft/set-0/TRACE@boada-11.ac.upc.es.0001272147000000000012.mpit
+Extrae: Intermediate raw trace file created : /scratch/nas/1/par2107/lab1/3dfft/set-0/TRACE@boada-11.ac.upc.es.0001272147000000000013.mpit
+Extrae: Intermediate raw trace file created : /scratch/nas/1/par2107/lab1/3dfft/set-0/TRACE@boada-11.ac.upc.es.0001272147000000000014.mpit
+Extrae: Intermediate raw trace file created : /scratch/nas/1/par2107/lab1/3dfft/set-0/TRACE@boada-11.ac.upc.es.0001272147000000000015.mpit
+Extrae: Deallocating memory.
+Extrae: Application has ended. Tracing has been terminated.
+mpi2prv: A total of 3 symbols were imported from TRACE.sym file
+mpi2prv: 0 function symbols imported
+mpi2prv: 3 HWC counter descriptions imported
+merger: Output trace format is: Paraver
+merger: Extrae 4.0.1
+mpi2prv: Assigned nodes < boada-11.ac.upc.es >
+mpi2prv: Assigned size per processor < <1 Mbyte >
+mpi2prv: File /scratch/nas/1/par2107/lab1/3dfft/set-0/TRACE@boada-11.ac.upc.es.0001272147000000000000.mpit is object 1.1.1 on node boada-11.ac.upc.es assigned to processor 0
+mpi2prv: File /scratch/nas/1/par2107/lab1/3dfft/set-0/TRACE@boada-11.ac.upc.es.0001272147000000000001.mpit is object 1.1.2 on node boada-11.ac.upc.es assigned to processor 0
+mpi2prv: File /scratch/nas/1/par2107/lab1/3dfft/set-0/TRACE@boada-11.ac.upc.es.0001272147000000000002.mpit is object 1.1.3 on node boada-11.ac.upc.es assigned to processor 0
+mpi2prv: File /scratch/nas/1/par2107/lab1/3dfft/set-0/TRACE@boada-11.ac.upc.es.0001272147000000000003.mpit is object 1.1.4 on node boada-11.ac.upc.es assigned to processor 0
+mpi2prv: File /scratch/nas/1/par2107/lab1/3dfft/set-0/TRACE@boada-11.ac.upc.es.0001272147000000000004.mpit is object 1.1.5 on node boada-11.ac.upc.es assigned to processor 0
+mpi2prv: File /scratch/nas/1/par2107/lab1/3dfft/set-0/TRACE@boada-11.ac.upc.es.0001272147000000000005.mpit is object 1.1.6 on node boada-11.ac.upc.es assigned to processor 0
+mpi2prv: File /scratch/nas/1/par2107/lab1/3dfft/set-0/TRACE@boada-11.ac.upc.es.0001272147000000000006.mpit is object 1.1.7 on node boada-11.ac.upc.es assigned to processor 0
+mpi2prv: File /scratch/nas/1/par2107/lab1/3dfft/set-0/TRACE@boada-11.ac.upc.es.0001272147000000000007.mpit is object 1.1.8 on node boada-11.ac.upc.es assigned to processor 0
+mpi2prv: File /scratch/nas/1/par2107/lab1/3dfft/set-0/TRACE@boada-11.ac.upc.es.0001272147000000000008.mpit is object 1.1.9 on node boada-11.ac.upc.es assigned to processor 0
+mpi2prv: File /scratch/nas/1/par2107/lab1/3dfft/set-0/TRACE@boada-11.ac.upc.es.0001272147000000000009.mpit is object 1.1.10 on node boada-11.ac.upc.es assigned to processor 0
+mpi2prv: File /scratch/nas/1/par2107/lab1/3dfft/set-0/TRACE@boada-11.ac.upc.es.0001272147000000000010.mpit is object 1.1.11 on node boada-11.ac.upc.es assigned to processor 0
+mpi2prv: File /scratch/nas/1/par2107/lab1/3dfft/set-0/TRACE@boada-11.ac.upc.es.0001272147000000000011.mpit is object 1.1.12 on node boada-11.ac.upc.es assigned to processor 0
+mpi2prv: File /scratch/nas/1/par2107/lab1/3dfft/set-0/TRACE@boada-11.ac.upc.es.0001272147000000000012.mpit is object 1.1.13 on node boada-11.ac.upc.es assigned to processor 0
+mpi2prv: File /scratch/nas/1/par2107/lab1/3dfft/set-0/TRACE@boada-11.ac.upc.es.0001272147000000000013.mpit is object 1.1.14 on node boada-11.ac.upc.es assigned to processor 0
+mpi2prv: File /scratch/nas/1/par2107/lab1/3dfft/set-0/TRACE@boada-11.ac.upc.es.0001272147000000000014.mpit is object 1.1.15 on node boada-11.ac.upc.es assigned to processor 0
+mpi2prv: File /scratch/nas/1/par2107/lab1/3dfft/set-0/TRACE@boada-11.ac.upc.es.0001272147000000000015.mpit is object 1.1.16 on node boada-11.ac.upc.es assigned to processor 0
+mpi2prv: Time synchronization has been turned off
+mpi2prv: Checking for target directory existence... exists, ok!
+mpi2prv: Selected output trace format is Paraver
+mpi2prv: Stored trace format is Paraver
+mpi2prv: Enabling Time Synchronization (Node).
+mpi2prv: Circular buffer enabled at tracing time? NO
+mpi2prv: Parsing intermediate files
+mpi2prv: Progress 1 of 2 ... 5% 10% 15% 20% 25% 30% 35% 40% 45% 50% 55% 60% 65% 70% 75% 80% 85% 90% 95% done
+mpi2prv: Processor 0 succeeded to translate its assigned files
+mpi2prv: Elapsed time translating files: 0 hours 0 minutes 0 seconds
+mpi2prv: Elapsed time sorting addresses: 0 hours 0 minutes 0 seconds
+mpi2prv: Generating tracefile (intermediate buffers of 419424 events)
+         This process can take a while. Please, be patient.
+mpi2prv: Progress 2 of 2 ... 5% 10% 15% 20% 25% 30% 35% 40% 45% 50% 55% 60% 65% 70% 75% 80% 85% 90% 95% done
+mpi2prv: Elapsed time merge step: 0 hours 0 minutes 0 seconds
+mpi2prv: Resulting tracefile occupies 356127 bytes
+mpi2prv: Removing temporal files... done
+mpi2prv: Elapsed time removing temporal files: 0 hours 0 minutes 0 seconds
+mpi2prv: Congratulations! 3dfft_omp-strong-extrae/3dfft_omp-16-boada-11.prv has been generated.
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex)
+ restricted \write18 enabled.
+entering extended mode
+(../modelfactor-tables.tex
+LaTeX2e <2021-11-15> patch level 1
+L3 programming layer <2022-01-21>
+(/usr/share/texlive/texmf-dist/tex/latex/base/report.cls
+Document Class: report 2021/10/04 v1.4n Standard LaTeX document class
+(/usr/share/texlive/texmf-dist/tex/latex/base/size10.clo))
+(/usr/share/texlive/texmf-dist/tex/latex/base/inputenc.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/graphicx.sty
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/keyval.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/graphics.sty
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/trig.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/graphics-cfg/graphics.cfg)
+(/usr/share/texlive/texmf-dist/tex/latex/graphics-def/pdftex.def)))
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/amssymb.sty
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/amsfonts.sty))
+(/usr/share/texlive/texmf-dist/tex/latex/tools/xspace.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/preprint/fullpage.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/multirow/multirow.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/pdflscape/pdflscape.sty
+(/usr/share/texlive/texmf-dist/tex/generic/iftex/iftex.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/lscape.sty))
+(/usr/share/texlive/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def)
+No file modelfactor-tables.aux.
+(/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
+[Loading MPS to PDF converter (version 2006.09.02).]
+) (/usr/share/texlive/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
+(/usr/share/texlive/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg))
+(./table1.tex (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd)
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd)) [1{/var/lib/texmf/f
+onts/map/pdftex/updmap/pdftex.map}] (./table2.tex) (./table3.tex) [2]
+(./modelfactor-tables.aux) )</usr/share/texlive/texmf-dist/fonts/type1/public/a
+msfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfont
+s/cm/cmr10.pfb>
+Output written on modelfactor-tables.pdf (2 pages, 33617 bytes).
+Transcript written on modelfactor-tables.log.

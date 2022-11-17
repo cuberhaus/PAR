@@ -1,0 +1,10 @@
+EVENT_TYPE
+0     7003     running task
+VALUES
+0     task_end
+1     MAIN_TAREADOR
+2     start_plan_forward
+3     init_complex_grid_loop_j
+4     ffts1_planes_loop_k
+5     Transpose_xy_loop_k
+6     Transpose_zx_loop_k

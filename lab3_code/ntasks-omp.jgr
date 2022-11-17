@@ -1,0 +1,17 @@
+newgraph
+   title : UUU\
+Average elapsed execution time \
+FFF
+   xaxis min 0.25 label : Number of tasks in taskloop
+      hash_labels vjc hjr rotate 90
+      no_auto_hash_labels
+      include ./hash_labels.txt
+
+   yaxis min 0 label : Execution time 
+
+   newcurve
+      marktype xbar
+      marksize 0.5 0
+      fill 0.5
+      pts
+         include ./elapsed.txt

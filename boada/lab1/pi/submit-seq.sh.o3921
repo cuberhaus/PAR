@@ -1,0 +1,3 @@
+icc  -g -O3 -std=c99 -march=native pi_seq.c -o pi_seq
+Number pi after 1000000000 iterations = 3.141592653589828
+Execution time (secs.): 0.687806

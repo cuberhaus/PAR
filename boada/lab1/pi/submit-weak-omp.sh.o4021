@@ -1,0 +1,174 @@
+icc  -g -O3 -std=c99 -march=native -fopenmp pi_omp.c -o pi_omp
+Executing pi_omp with one thread
+Run 0...Elapsed time = 0.074308
+Run 1...Elapsed time = 0.073930
+Run 2...Elapsed time = 0.072969
+ELAPSED TIME MIN OF 3 EXECUTIONS =0.072969
+
+pi_omp 100000000 1 20 3
+Starting OpenMP executions...
+Executing pi_omp with 1 threads
+Run 0 with size 100000000 ...Elapsed time = 0.073775
+Run 1 with size 100000000 ...Elapsed time = 0.073894
+Run 2 with size 100000000 ...Elapsed time = 0.073503
+ELAPSED TIME Min OF 3 EXECUTIONS =0.073503
+
+Executing pi_omp with 2 threads
+Run 0 with size 200000000 ...Elapsed time = 0.075105
+Run 1 with size 200000000 ...Elapsed time = 0.075395
+Run 2 with size 200000000 ...Elapsed time = 0.076699
+ELAPSED TIME Min OF 3 EXECUTIONS =0.075105
+
+Executing pi_omp with 3 threads
+Run 0 with size 300000000 ...Elapsed time = 0.076447
+Run 1 with size 300000000 ...Elapsed time = 0.076611
+Run 2 with size 300000000 ...Elapsed time = 0.076512
+ELAPSED TIME Min OF 3 EXECUTIONS =0.076447
+
+Executing pi_omp with 4 threads
+Run 0 with size 400000000 ...Elapsed time = 0.076123
+Run 1 with size 400000000 ...Elapsed time = 0.076987
+Run 2 with size 400000000 ...Elapsed time = 0.077374
+ELAPSED TIME Min OF 3 EXECUTIONS =0.076123
+
+Executing pi_omp with 5 threads
+Run 0 with size 500000000 ...Elapsed time = 0.079143
+Run 1 with size 500000000 ...Elapsed time = 0.079083
+Run 2 with size 500000000 ...Elapsed time = 0.078742
+ELAPSED TIME Min OF 3 EXECUTIONS =0.078742
+
+Executing pi_omp with 6 threads
+Run 0 with size 600000000 ...Elapsed time = 0.079741
+Run 1 with size 600000000 ...Elapsed time = 0.080534
+Run 2 with size 600000000 ...Elapsed time = 0.080344
+ELAPSED TIME Min OF 3 EXECUTIONS =0.079741
+
+Executing pi_omp with 7 threads
+Run 0 with size 700000000 ...Elapsed time = 0.079709
+Run 1 with size 700000000 ...Elapsed time = 0.079967
+Run 2 with size 700000000 ...Elapsed time = 0.080074
+ELAPSED TIME Min OF 3 EXECUTIONS =0.079709
+
+Executing pi_omp with 8 threads
+Run 0 with size 800000000 ...Elapsed time = 0.080724
+Run 1 with size 800000000 ...Elapsed time = 0.081596
+Run 2 with size 800000000 ...Elapsed time = 0.081511
+ELAPSED TIME Min OF 3 EXECUTIONS =0.080724
+
+Executing pi_omp with 9 threads
+Run 0 with size 900000000 ...Elapsed time = 0.082392
+Run 1 with size 900000000 ...Elapsed time = 0.082532
+Run 2 with size 900000000 ...Elapsed time = 0.082006
+ELAPSED TIME Min OF 3 EXECUTIONS =0.082006
+
+Executing pi_omp with 10 threads
+Run 0 with size 1000000000 ...Elapsed time = 0.082094
+Run 1 with size 1000000000 ...Elapsed time = 0.082864
+Run 2 with size 1000000000 ...Elapsed time = 0.082380
+ELAPSED TIME Min OF 3 EXECUTIONS =0.082094
+
+Executing pi_omp with 11 threads
+Run 0 with size 1100000000 ...Elapsed time = 0.082303
+Run 1 with size 1100000000 ...Elapsed time = 0.082825
+Run 2 with size 1100000000 ...Elapsed time = 0.083061
+ELAPSED TIME Min OF 3 EXECUTIONS =0.082303
+
+Executing pi_omp with 12 threads
+Run 0 with size 1200000000 ...Elapsed time = 0.081884
+Run 1 with size 1200000000 ...Elapsed time = 0.082754
+Run 2 with size 1200000000 ...Elapsed time = 0.084265
+ELAPSED TIME Min OF 3 EXECUTIONS =0.081884
+
+Executing pi_omp with 13 threads
+Run 0 with size 1300000000 ...Elapsed time = 0.082835
+Run 1 with size 1300000000 ...Elapsed time = 0.084099
+Run 2 with size 1300000000 ...Elapsed time = 0.083171
+ELAPSED TIME Min OF 3 EXECUTIONS =0.082835
+
+Executing pi_omp with 14 threads
+Run 0 with size 1400000000 ...Elapsed time = 0.083529
+Run 1 with size 1400000000 ...Elapsed time = 0.083748
+Run 2 with size 1400000000 ...Elapsed time = 0.082626
+ELAPSED TIME Min OF 3 EXECUTIONS =0.082626
+
+Executing pi_omp with 15 threads
+Run 0 with size 1500000000 ...Elapsed time = 0.083065
+Run 1 with size 1500000000 ...Elapsed time = 0.084659
+Run 2 with size 1500000000 ...Elapsed time = 0.083250
+ELAPSED TIME Min OF 3 EXECUTIONS =0.083065
+
+Executing pi_omp with 16 threads
+Run 0 with size 1600000000 ...Elapsed time = 0.084956
+Run 1 with size 1600000000 ...Elapsed time = 0.085704
+Run 2 with size 1600000000 ...Elapsed time = 0.083950
+ELAPSED TIME Min OF 3 EXECUTIONS =0.083950
+
+Executing pi_omp with 17 threads
+Run 0 with size 1700000000 ...Elapsed time = 0.088554
+Run 1 with size 1700000000 ...Elapsed time = 0.088771
+Run 2 with size 1700000000 ...Elapsed time = 0.088186
+ELAPSED TIME Min OF 3 EXECUTIONS =0.088186
+
+Executing pi_omp with 18 threads
+Run 0 with size 1800000000 ...Elapsed time = 0.088362
+Run 1 with size 1800000000 ...Elapsed time = 0.088252
+Run 2 with size 1800000000 ...Elapsed time = 0.087906
+ELAPSED TIME Min OF 3 EXECUTIONS =0.087906
+
+Executing pi_omp with 19 threads
+Run 0 with size 1900000000 ...Elapsed time = 0.088418
+Run 1 with size 1900000000 ...Elapsed time = 0.088658
+Run 2 with size 1900000000 ...Elapsed time = 0.088623
+ELAPSED TIME Min OF 3 EXECUTIONS =0.088418
+
+Executing pi_omp with 20 threads
+Run 0 with size 2000000000 ...Elapsed time = 0.089842
+Run 1 with size 2000000000 ...Elapsed time = 0.088895
+Run 2 with size 2000000000 ...Elapsed time = 0.088836
+ELAPSED TIME Min OF 3 EXECUTIONS =0.088836
+
+Resultat de l'experiment (tambe es troben a  ./executiontime-boada-11.txt  i  ./efficiency-boada-11.txt  )
+#threads	Elapsed min
+1   0.073503
+2   0.075105
+3   0.076447
+4   0.076123
+5   0.078742
+6   0.079741
+7   0.079709
+8   0.080724
+9   0.082006
+10   0.082094
+11   0.082303
+12   0.081884
+13   0.082835
+14   0.082626
+15   0.083065
+16   0.083950
+17   0.088186
+18   0.087906
+19   0.088418
+20   0.088836
+
+#threads	Speedup
+1   .99273499040855475286
+2   .97155981625723986419
+3   .95450442790429971091
+4   .95856705594892476649
+5   .92668461557999542810
+6   .91507505549215585457
+7   .91544242180933144312
+8   .90393191615876319310
+9   .88980074628685705923
+10   .88884693156625331936
+11   .88658979624072026536
+12   .89112647159396219041
+13   .88089575662461519888
+14   .88312395613971389151
+15   .87845663034972611810
+16   .86919594997022036926
+17   .82744426552967591227
+18   .83007985803016858917
+19   .82527313442964102332
+20   .82138997703633662028
+

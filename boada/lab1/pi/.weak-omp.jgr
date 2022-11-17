@@ -1,0 +1,16 @@
+newgraph
+   title : UUU\
+Parallel Efficiency w.r.t. one thread (weak scaling)\
+FFF
+   xaxis 
+      label : OMP #threads
+   yaxis
+      label : Parallel Efficiency
+      min 0
+      mhash 4 
+
+   newcurve
+      linetype solid
+      marktype none
+      pts
+         include ./efficiency-HHH.txt
