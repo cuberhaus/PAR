@@ -1,0 +1,3 @@
+H -2147483589 "PAPI_TOT_CYC [Total cycles]"
+H -2147483598 "PAPI_TOT_INS [Instr completed]"
+H 1073741860 "FP_ARITH:512B_PACKED_DOUBLE [Floating-point instructions retired, masks:Number of scalar 512-bit packed double precision floating-point arithmetic instructions (multiply by 8 to get flops)]"

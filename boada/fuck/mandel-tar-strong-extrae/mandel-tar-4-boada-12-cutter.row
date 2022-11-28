@@ -1,0 +1,14 @@
+LEVEL CPU SIZE 4
+1.boada-12.ac.upc.es
+2.boada-12.ac.upc.es
+3.boada-12.ac.upc.es
+4.boada-12.ac.upc.es
+
+LEVEL NODE SIZE 1
+boada-12.ac.upc.es
+
+LEVEL THREAD SIZE 4
+THREAD 1.1.1
+THREAD 1.1.2
+THREAD 1.1.3
+THREAD 1.1.4
