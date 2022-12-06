@@ -1,0 +1,585 @@
+rm -fr multisort-seq multisort-tareador multisort-omp *.o .tareador_precomputed* *.log
+icc  -c -g -std=c99 -Wall -O2 -fp-model precise kernels.c -o kernels.o
+icc  -g -std=c99 -Wall -O2 -fp-model precise -fopenmp multisort-omp.c kernels.o -lm -o multisort-omp
+Tracing multisort-omp with 1 threads
+Welcome to Extrae 4.0.1
+Extrae: Detected GOMP version is 4.5
+Extrae: Detected and hooked OpenMP runtime: [Intel KMPC] [GNU GOMP]
+Extrae: OMP_NUM_THREADS set to 1
+Extrae: Parsing the configuration file (/Soft/PAR/extrae.xml) begins
+Extrae: Tracing package is located on $EXTRAE_HOME
+Extrae: Generating intermediate files for Paraver traces.
+Extrae: OpenMP routines will collect HW counters information.
+Extrae: User Function routines will collect HW counters information.
+Extrae: PAPI domain set to ALL for HWC set 1
+Extrae: HWC set 1 contains following counters < PAPI_TOT_CYC (0x8000003b) PAPI_TOT_INS (0x80000032) FP_ARITH:512B_PACKED_DOUBLE (0x40000024) > - never changes
+Extrae: Resource usage is disabled at flush buffer.
+Extrae: Memory usage is disabled at flush buffer.
+Extrae: Tracing buffer can hold 500000 events
+Extrae: Circular buffer disabled.
+Extrae: Dynamic memory instrumentation is disabled.
+Extrae: Basic I/O memory instrumentation is disabled.
+Extrae: System calls instrumentation is disabled.
+Extrae: Parsing the configuration file (/Soft/PAR/extrae.xml) has ended
+Extrae: Intermediate traces will be stored in /scratch/nas/1/par2107/lab4
+Extrae: Tracing mode is set to: Detail.
+Extrae: Successfully initiated with 1 tasks and 1 threads
+
+*****************************************************************************************
+Problem size (in number of elements): N=1024, MIN_SORT_SIZE=256, MIN_MERGE_SIZE=256
+Cut-off level:                        CUTOFF=50
+Number of threads in OpenMP:          OMP_NUM_THREADS=1
+*****************************************************************************************
+Initialization time in seconds: 0.023364
+Multisort execution time: 0.240474
+Check sorted data execution time: 0.000290
+Multisort program finished
+*****************************************************************************************
+Extrae: Intermediate raw trace file created : /scratch/nas/1/par2107/lab4/set-0/TRACE@boada-11.ac.upc.es.0003876994000000000000.mpit
+Extrae: Intermediate raw sym file created : /scratch/nas/1/par2107/lab4/set-0/TRACE@boada-11.ac.upc.es.0003876994000000000000.sym
+Extrae: Deallocating memory.
+Extrae: Application has ended. Tracing has been terminated.
+mpi2prv: A total of 3 symbols were imported from TRACE.sym file
+mpi2prv: 0 function symbols imported
+mpi2prv: 3 HWC counter descriptions imported
+merger: Output trace format is: Paraver
+merger: Extrae 4.0.1
+mpi2prv: Assigned nodes < boada-11.ac.upc.es >
+mpi2prv: Assigned size per processor < 44 Mbytes >
+mpi2prv: File /scratch/nas/1/par2107/lab4/set-0/TRACE@boada-11.ac.upc.es.0003876994000000000000.mpit is object 1.1.1 on node boada-11.ac.upc.es assigned to processor 0
+mpi2prv: Time synchronization has been turned off
+mpi2prv: Checking for target directory existence... exists, ok!
+mpi2prv: Selected output trace format is Paraver
+mpi2prv: Stored trace format is Paraver
+mpi2prv: Enabling Time Synchronization (Node).
+mpi2prv: Circular buffer enabled at tracing time? NO
+mpi2prv: Parsing intermediate files
+mpi2prv: Progress 1 of 2 ... 5% 10% 15% 20% 25% 30% 35% 40% 45% 50% 55% 60% 65% 70% 75% 80% 85% 90% 95% done
+mpi2prv: Processor 0 succeeded to translate its assigned files
+mpi2prv: Elapsed time translating files: 0 hours 0 minutes 0 seconds
+mpi2prv: Elapsed time sorting addresses: 0 hours 0 minutes 0 seconds
+mpi2prv: Generating tracefile (intermediate buffers of 6710784 events)
+         This process can take a while. Please, be patient.
+mpi2prv: Progress 2 of 2 ... 5% 10% 15% 20% 25% 30% 35% 40% 45% 50% 55% 60% 65% 70% 75% 80% 85% 90% 95% done
+mpi2prv: Elapsed time merge step: 0 hours 0 minutes 1 seconds
+mpi2prv: Resulting tracefile occupies 39679975 bytes
+mpi2prv: Removing temporal files... done
+mpi2prv: Elapsed time removing temporal files: 0 hours 0 minutes 0 seconds
+mpi2prv: Congratulations! multisort-omp-strong-extrae/multisort-omp-1-boada-11.prv has been generated.
+Tracing multisort-omp with 2 threads
+Welcome to Extrae 4.0.1
+Extrae: Detected GOMP version is 4.5
+Extrae: Detected and hooked OpenMP runtime: [Intel KMPC] [GNU GOMP]
+Extrae: OMP_NUM_THREADS set to 2
+Extrae: Parsing the configuration file (/Soft/PAR/extrae.xml) begins
+Extrae: Tracing package is located on $EXTRAE_HOME
+Extrae: Generating intermediate files for Paraver traces.
+Extrae: OpenMP routines will collect HW counters information.
+Extrae: User Function routines will collect HW counters information.
+Extrae: PAPI domain set to ALL for HWC set 1
+Extrae: HWC set 1 contains following counters < PAPI_TOT_CYC (0x8000003b) PAPI_TOT_INS (0x80000032) FP_ARITH:512B_PACKED_DOUBLE (0x40000024) > - never changes
+Extrae: Resource usage is disabled at flush buffer.
+Extrae: Memory usage is disabled at flush buffer.
+Extrae: Tracing buffer can hold 500000 events
+Extrae: Circular buffer disabled.
+Extrae: Dynamic memory instrumentation is disabled.
+Extrae: Basic I/O memory instrumentation is disabled.
+Extrae: System calls instrumentation is disabled.
+Extrae: Parsing the configuration file (/Soft/PAR/extrae.xml) has ended
+Extrae: Intermediate traces will be stored in /scratch/nas/1/par2107/lab4
+Extrae: Tracing mode is set to: Detail.
+Extrae: Successfully initiated with 1 tasks and 2 threads
+
+*****************************************************************************************
+Problem size (in number of elements): N=1024, MIN_SORT_SIZE=256, MIN_MERGE_SIZE=256
+Cut-off level:                        CUTOFF=50
+Number of threads in OpenMP:          OMP_NUM_THREADS=2
+*****************************************************************************************
+Initialization time in seconds: 0.022057
+Multisort execution time: 0.278493
+Check sorted data execution time: 0.000485
+Multisort program finished
+*****************************************************************************************
+Extrae: Intermediate raw trace file created : /scratch/nas/1/par2107/lab4/set-0/TRACE@boada-11.ac.upc.es.0003877021000000000000.mpit
+Extrae: Intermediate raw sym file created : /scratch/nas/1/par2107/lab4/set-0/TRACE@boada-11.ac.upc.es.0003877021000000000000.sym
+Extrae: Intermediate raw trace file created : /scratch/nas/1/par2107/lab4/set-0/TRACE@boada-11.ac.upc.es.0003877021000000000001.mpit
+Extrae: Deallocating memory.
+Extrae: Application has ended. Tracing has been terminated.
+mpi2prv: A total of 3 symbols were imported from TRACE.sym file
+mpi2prv: 0 function symbols imported
+mpi2prv: 3 HWC counter descriptions imported
+merger: Output trace format is: Paraver
+merger: Extrae 4.0.1
+mpi2prv: Assigned nodes < boada-11.ac.upc.es >
+mpi2prv: Assigned size per processor < 44 Mbytes >
+mpi2prv: File /scratch/nas/1/par2107/lab4/set-0/TRACE@boada-11.ac.upc.es.0003877021000000000000.mpit is object 1.1.1 on node boada-11.ac.upc.es assigned to processor 0
+mpi2prv: File /scratch/nas/1/par2107/lab4/set-0/TRACE@boada-11.ac.upc.es.0003877021000000000001.mpit is object 1.1.2 on node boada-11.ac.upc.es assigned to processor 0
+mpi2prv: Time synchronization has been turned off
+mpi2prv: Checking for target directory existence... exists, ok!
+mpi2prv: Selected output trace format is Paraver
+mpi2prv: Stored trace format is Paraver
+mpi2prv: Enabling Time Synchronization (Node).
+mpi2prv: Circular buffer enabled at tracing time? NO
+mpi2prv: Parsing intermediate files
+mpi2prv: Progress 1 of 2 ... 5% 10% 15% 20% 25% 30% 35% 40% 45% 50% 55% 60% 65% 70% 75% 80% 85% 90% 95% done
+mpi2prv: Processor 0 succeeded to translate its assigned files
+mpi2prv: Elapsed time translating files: 0 hours 0 minutes 0 seconds
+mpi2prv: Elapsed time sorting addresses: 0 hours 0 minutes 0 seconds
+mpi2prv: Generating tracefile (intermediate buffers of 3355392 events)
+         This process can take a while. Please, be patient.
+mpi2prv: Progress 2 of 2 ... 5% 10% 15% 20% 25% 30% 35% 40% 45% 50% 55% 60% 65% 70% 75% 80% 85% 90% 95% done
+mpi2prv: Elapsed time merge step: 0 hours 0 minutes 1 seconds
+mpi2prv: Resulting tracefile occupies 46314805 bytes
+mpi2prv: Removing temporal files... done
+mpi2prv: Elapsed time removing temporal files: 0 hours 0 minutes 0 seconds
+mpi2prv: Congratulations! multisort-omp-strong-extrae/multisort-omp-2-boada-11.prv has been generated.
+Tracing multisort-omp with 4 threads
+Welcome to Extrae 4.0.1
+Extrae: Detected GOMP version is 4.5
+Extrae: Detected and hooked OpenMP runtime: [Intel KMPC] [GNU GOMP]
+Extrae: OMP_NUM_THREADS set to 4
+Extrae: Parsing the configuration file (/Soft/PAR/extrae.xml) begins
+Extrae: Tracing package is located on $EXTRAE_HOME
+Extrae: Generating intermediate files for Paraver traces.
+Extrae: OpenMP routines will collect HW counters information.
+Extrae: User Function routines will collect HW counters information.
+Extrae: PAPI domain set to ALL for HWC set 1
+Extrae: HWC set 1 contains following counters < PAPI_TOT_CYC (0x8000003b) PAPI_TOT_INS (0x80000032) FP_ARITH:512B_PACKED_DOUBLE (0x40000024) > - never changes
+Extrae: Resource usage is disabled at flush buffer.
+Extrae: Memory usage is disabled at flush buffer.
+Extrae: Tracing buffer can hold 500000 events
+Extrae: Circular buffer disabled.
+Extrae: Dynamic memory instrumentation is disabled.
+Extrae: Basic I/O memory instrumentation is disabled.
+Extrae: System calls instrumentation is disabled.
+Extrae: Parsing the configuration file (/Soft/PAR/extrae.xml) has ended
+Extrae: Intermediate traces will be stored in /scratch/nas/1/par2107/lab4
+Extrae: Tracing mode is set to: Detail.
+Extrae: Successfully initiated with 1 tasks and 4 threads
+
+*****************************************************************************************
+Problem size (in number of elements): N=1024, MIN_SORT_SIZE=256, MIN_MERGE_SIZE=256
+Cut-off level:                        CUTOFF=50
+Number of threads in OpenMP:          OMP_NUM_THREADS=4
+*****************************************************************************************
+Initialization time in seconds: 0.022713
+Multisort execution time: 0.224410
+Check sorted data execution time: 0.000505
+Multisort program finished
+*****************************************************************************************
+Extrae: Intermediate raw trace file created : /scratch/nas/1/par2107/lab4/set-0/TRACE@boada-11.ac.upc.es.0003877048000000000000.mpit
+Extrae: Intermediate raw sym file created : /scratch/nas/1/par2107/lab4/set-0/TRACE@boada-11.ac.upc.es.0003877048000000000000.sym
+Extrae: Intermediate raw trace file created : /scratch/nas/1/par2107/lab4/set-0/TRACE@boada-11.ac.upc.es.0003877048000000000001.mpit
+Extrae: Intermediate raw trace file created : /scratch/nas/1/par2107/lab4/set-0/TRACE@boada-11.ac.upc.es.0003877048000000000002.mpit
+Extrae: Intermediate raw trace file created : /scratch/nas/1/par2107/lab4/set-0/TRACE@boada-11.ac.upc.es.0003877048000000000003.mpit
+Extrae: Deallocating memory.
+Extrae: Application has ended. Tracing has been terminated.
+mpi2prv: A total of 3 symbols were imported from TRACE.sym file
+mpi2prv: 0 function symbols imported
+mpi2prv: 3 HWC counter descriptions imported
+merger: Output trace format is: Paraver
+merger: Extrae 4.0.1
+mpi2prv: Assigned nodes < boada-11.ac.upc.es >
+mpi2prv: Assigned size per processor < 44 Mbytes >
+mpi2prv: File /scratch/nas/1/par2107/lab4/set-0/TRACE@boada-11.ac.upc.es.0003877048000000000000.mpit is object 1.1.1 on node boada-11.ac.upc.es assigned to processor 0
+mpi2prv: File /scratch/nas/1/par2107/lab4/set-0/TRACE@boada-11.ac.upc.es.0003877048000000000001.mpit is object 1.1.2 on node boada-11.ac.upc.es assigned to processor 0
+mpi2prv: File /scratch/nas/1/par2107/lab4/set-0/TRACE@boada-11.ac.upc.es.0003877048000000000002.mpit is object 1.1.3 on node boada-11.ac.upc.es assigned to processor 0
+mpi2prv: File /scratch/nas/1/par2107/lab4/set-0/TRACE@boada-11.ac.upc.es.0003877048000000000003.mpit is object 1.1.4 on node boada-11.ac.upc.es assigned to processor 0
+mpi2prv: Time synchronization has been turned off
+mpi2prv: Checking for target directory existence... exists, ok!
+mpi2prv: Selected output trace format is Paraver
+mpi2prv: Stored trace format is Paraver
+mpi2prv: Enabling Time Synchronization (Node).
+mpi2prv: Circular buffer enabled at tracing time? NO
+mpi2prv: Parsing intermediate files
+mpi2prv: Progress 1 of 2 ... 5% 10% 15% 20% 25% 30% 35% 40% 45% 50% 55% 60% 65% 70% 75% 80% 85% 90% 95% done
+mpi2prv: Processor 0 succeeded to translate its assigned files
+mpi2prv: Elapsed time translating files: 0 hours 0 minutes 1 seconds
+mpi2prv: Elapsed time sorting addresses: 0 hours 0 minutes 0 seconds
+mpi2prv: Generating tracefile (intermediate buffers of 1677696 events)
+         This process can take a while. Please, be patient.
+mpi2prv: Progress 2 of 2 ... 5% 10% 15% 20% 25% 30% 35% 40% 45% 50% 55% 60% 65% 70% 75% 80% 85% 90% 95% done
+mpi2prv: Elapsed time merge step: 0 hours 0 minutes 0 seconds
+mpi2prv: Resulting tracefile occupies 46388816 bytes
+mpi2prv: Removing temporal files... done
+mpi2prv: Elapsed time removing temporal files: 0 hours 0 minutes 0 seconds
+mpi2prv: Congratulations! multisort-omp-strong-extrae/multisort-omp-4-boada-11.prv has been generated.
+Tracing multisort-omp with 6 threads
+Welcome to Extrae 4.0.1
+Extrae: Detected GOMP version is 4.5
+Extrae: Detected and hooked OpenMP runtime: [Intel KMPC] [GNU GOMP]
+Extrae: OMP_NUM_THREADS set to 6
+Extrae: Parsing the configuration file (/Soft/PAR/extrae.xml) begins
+Extrae: Tracing package is located on $EXTRAE_HOME
+Extrae: Generating intermediate files for Paraver traces.
+Extrae: OpenMP routines will collect HW counters information.
+Extrae: User Function routines will collect HW counters information.
+Extrae: PAPI domain set to ALL for HWC set 1
+Extrae: HWC set 1 contains following counters < PAPI_TOT_CYC (0x8000003b) PAPI_TOT_INS (0x80000032) FP_ARITH:512B_PACKED_DOUBLE (0x40000024) > - never changes
+Extrae: Resource usage is disabled at flush buffer.
+Extrae: Memory usage is disabled at flush buffer.
+Extrae: Tracing buffer can hold 500000 events
+Extrae: Circular buffer disabled.
+Extrae: Dynamic memory instrumentation is disabled.
+Extrae: Basic I/O memory instrumentation is disabled.
+Extrae: System calls instrumentation is disabled.
+Extrae: Parsing the configuration file (/Soft/PAR/extrae.xml) has ended
+Extrae: Intermediate traces will be stored in /scratch/nas/1/par2107/lab4
+Extrae: Tracing mode is set to: Detail.
+Extrae: Successfully initiated with 1 tasks and 6 threads
+
+*****************************************************************************************
+Problem size (in number of elements): N=1024, MIN_SORT_SIZE=256, MIN_MERGE_SIZE=256
+Cut-off level:                        CUTOFF=50
+Number of threads in OpenMP:          OMP_NUM_THREADS=6
+*****************************************************************************************
+Initialization time in seconds: 0.023422
+Multisort execution time: 0.203784
+Check sorted data execution time: 0.000488
+Multisort program finished
+*****************************************************************************************
+Extrae: Intermediate raw trace was NOT created : /scratch/nas/1/par2107/lab4/set-0/TRACE@boada-11.ac.upc.es.0003877078000000000000.mpit
+Extrae: Intermediate raw trace was NOT created : /scratch/nas/1/par2107/lab4/set-0/TRACE@boada-11.ac.upc.es.0003877078000000000001.mpit
+Extrae: Intermediate raw trace was NOT created : /scratch/nas/1/par2107/lab4/set-0/TRACE@boada-11.ac.upc.es.0003877078000000000002.mpit
+Extrae: Intermediate raw trace was NOT created : /scratch/nas/1/par2107/lab4/set-0/TRACE@boada-11.ac.upc.es.0003877078000000000003.mpit
+Extrae: Intermediate raw trace was NOT created : /scratch/nas/1/par2107/lab4/set-0/TRACE@boada-11.ac.upc.es.0003877078000000000004.mpit
+Extrae: Intermediate raw trace was NOT created : /scratch/nas/1/par2107/lab4/set-0/TRACE@boada-11.ac.upc.es.0003877078000000000005.mpit
+Extrae: Deallocating memory.
+Extrae: Application has ended. Tracing has been terminated.
+mpi2prv: A total of 3 symbols were imported from TRACE.sym file
+mpi2prv: 0 function symbols imported
+mpi2prv: 3 HWC counter descriptions imported
+merger: Output trace format is: Paraver
+merger: Extrae 4.0.1
+mpi2prv: Assigned nodes < boada-11.ac.upc.es >
+mpi2prv: Assigned size per processor < 0 bytes >
+mpi2prv: File ./set-0/TRACE@boada-12.ac.upc.es.0001958062000000000000.mpit is object 1.1.1 on node boada-12.ac.upc.es assigned to processor 0
+mpi2prv: File ./set-0/TRACE@boada-12.ac.upc.es.0001958062000000000001.mpit is object 1.1.2 on node boada-12.ac.upc.es assigned to processor 0
+mpi2prv: Time synchronization has been turned off
+mpi2prv: Checking for target directory existence... exists, ok!
+Tracing multisort-omp with 8 threads
+Welcome to Extrae 4.0.1
+Extrae: Detected GOMP version is 4.5
+Extrae: Detected and hooked OpenMP runtime: [Intel KMPC] [GNU GOMP]
+Extrae: OMP_NUM_THREADS set to 8
+Extrae: Parsing the configuration file (/Soft/PAR/extrae.xml) begins
+Extrae: Tracing package is located on $EXTRAE_HOME
+Extrae: Generating intermediate files for Paraver traces.
+Extrae: OpenMP routines will collect HW counters information.
+Extrae: User Function routines will collect HW counters information.
+Extrae: PAPI domain set to ALL for HWC set 1
+Extrae: HWC set 1 contains following counters < PAPI_TOT_CYC (0x8000003b) PAPI_TOT_INS (0x80000032) FP_ARITH:512B_PACKED_DOUBLE (0x40000024) > - never changes
+Extrae: Resource usage is disabled at flush buffer.
+Extrae: Memory usage is disabled at flush buffer.
+Extrae: Tracing buffer can hold 500000 events
+Extrae: Circular buffer disabled.
+Extrae: Dynamic memory instrumentation is disabled.
+Extrae: Basic I/O memory instrumentation is disabled.
+Extrae: System calls instrumentation is disabled.
+Extrae: Parsing the configuration file (/Soft/PAR/extrae.xml) has ended
+Extrae: Intermediate traces will be stored in /scratch/nas/1/par2107/lab4
+Extrae: Tracing mode is set to: Detail.
+Extrae: Successfully initiated with 1 tasks and 8 threads
+
+*****************************************************************************************
+Problem size (in number of elements): N=1024, MIN_SORT_SIZE=256, MIN_MERGE_SIZE=256
+Cut-off level:                        CUTOFF=50
+Number of threads in OpenMP:          OMP_NUM_THREADS=8
+*****************************************************************************************
+Initialization time in seconds: 0.023669
+Multisort execution time: 0.198577
+Check sorted data execution time: 0.000531
+Multisort program finished
+*****************************************************************************************
+Extrae: Intermediate raw trace was NOT created : /scratch/nas/1/par2107/lab4/set-0/TRACE@boada-11.ac.upc.es.0003877109000000000000.mpit
+Extrae: Intermediate raw trace was NOT created : /scratch/nas/1/par2107/lab4/set-0/TRACE@boada-11.ac.upc.es.0003877109000000000001.mpit
+Extrae: Intermediate raw trace was NOT created : /scratch/nas/1/par2107/lab4/set-0/TRACE@boada-11.ac.upc.es.0003877109000000000002.mpit
+Extrae: Intermediate raw trace was NOT created : /scratch/nas/1/par2107/lab4/set-0/TRACE@boada-11.ac.upc.es.0003877109000000000003.mpit
+Extrae: Intermediate raw trace was NOT created : /scratch/nas/1/par2107/lab4/set-0/TRACE@boada-11.ac.upc.es.0003877109000000000004.mpit
+Extrae: Intermediate raw trace was NOT created : /scratch/nas/1/par2107/lab4/set-0/TRACE@boada-11.ac.upc.es.0003877109000000000005.mpit
+Extrae: Intermediate raw trace was NOT created : /scratch/nas/1/par2107/lab4/set-0/TRACE@boada-11.ac.upc.es.0003877109000000000006.mpit
+Extrae: Intermediate raw trace was NOT created : /scratch/nas/1/par2107/lab4/set-0/TRACE@boada-11.ac.upc.es.0003877109000000000007.mpit
+Extrae: Deallocating memory.
+Extrae: Application has ended. Tracing has been terminated.
+mpi2prv: A total of 3 symbols were imported from TRACE.sym file
+mpi2prv: 0 function symbols imported
+mpi2prv: 3 HWC counter descriptions imported
+merger: Output trace format is: Paraver
+merger: Extrae 4.0.1
+mpi2prv: Assigned nodes < boada-11.ac.upc.es >
+mpi2prv: Assigned size per processor < 0 bytes >
+mpi2prv: File ./set-0/TRACE@boada-12.ac.upc.es.0001958121000000000000.mpit is object 1.1.1 on node boada-12.ac.upc.es assigned to processor 0
+mpi2prv: File ./set-0/TRACE@boada-12.ac.upc.es.0001958121000000000001.mpit is object 1.1.2 on node boada-12.ac.upc.es assigned to processor 0
+mpi2prv: File ./set-0/TRACE@boada-12.ac.upc.es.0001958121000000000002.mpit is object 1.1.3 on node boada-12.ac.upc.es assigned to processor 0
+mpi2prv: File ./set-0/TRACE@boada-12.ac.upc.es.0001958121000000000003.mpit is object 1.1.4 on node boada-12.ac.upc.es assigned to processor 0
+mpi2prv: File ./set-0/TRACE@boada-12.ac.upc.es.0001958121000000000004.mpit is object 1.1.5 on node boada-12.ac.upc.es assigned to processor 0
+mpi2prv: File ./set-0/TRACE@boada-12.ac.upc.es.0001958121000000000005.mpit is object 1.1.6 on node boada-12.ac.upc.es assigned to processor 0
+mpi2prv: Time synchronization has been turned off
+mpi2prv: Checking for target directory existence... exists, ok!
+Tracing multisort-omp with 10 threads
+Welcome to Extrae 4.0.1
+Extrae: Detected GOMP version is 4.5
+Extrae: Detected and hooked OpenMP runtime: [Intel KMPC] [GNU GOMP]
+Extrae: OMP_NUM_THREADS set to 10
+Extrae: Parsing the configuration file (/Soft/PAR/extrae.xml) begins
+Extrae: Tracing package is located on $EXTRAE_HOME
+Extrae: Generating intermediate files for Paraver traces.
+Extrae: OpenMP routines will collect HW counters information.
+Extrae: User Function routines will collect HW counters information.
+Extrae: PAPI domain set to ALL for HWC set 1
+Extrae: HWC set 1 contains following counters < PAPI_TOT_CYC (0x8000003b) PAPI_TOT_INS (0x80000032) FP_ARITH:512B_PACKED_DOUBLE (0x40000024) > - never changes
+Extrae: Resource usage is disabled at flush buffer.
+Extrae: Memory usage is disabled at flush buffer.
+Extrae: Tracing buffer can hold 500000 events
+Extrae: Circular buffer disabled.
+Extrae: Dynamic memory instrumentation is disabled.
+Extrae: Basic I/O memory instrumentation is disabled.
+Extrae: System calls instrumentation is disabled.
+Extrae: Parsing the configuration file (/Soft/PAR/extrae.xml) has ended
+Extrae: Intermediate traces will be stored in /scratch/nas/1/par2107/lab4
+Extrae: Tracing mode is set to: Detail.
+Extrae: Successfully initiated with 1 tasks and 10 threads
+
+*****************************************************************************************
+Problem size (in number of elements): N=1024, MIN_SORT_SIZE=256, MIN_MERGE_SIZE=256
+Cut-off level:                        CUTOFF=50
+Number of threads in OpenMP:          OMP_NUM_THREADS=10
+*****************************************************************************************
+Initialization time in seconds: 0.024107
+Multisort execution time: 0.201618
+Check sorted data execution time: 0.000518
+Multisort program finished
+*****************************************************************************************
+Extrae: Intermediate raw trace file created : /scratch/nas/1/par2107/lab4/set-0/TRACE@boada-11.ac.upc.es.0003877142000000000000.mpit
+Extrae: Intermediate raw sym file created : /scratch/nas/1/par2107/lab4/set-0/TRACE@boada-11.ac.upc.es.0003877142000000000000.sym
+Extrae: Intermediate raw trace file created : /scratch/nas/1/par2107/lab4/set-0/TRACE@boada-11.ac.upc.es.0003877142000000000001.mpit
+Extrae: Intermediate raw trace file created : /scratch/nas/1/par2107/lab4/set-0/TRACE@boada-11.ac.upc.es.0003877142000000000002.mpit
+Extrae: Intermediate raw trace file created : /scratch/nas/1/par2107/lab4/set-0/TRACE@boada-11.ac.upc.es.0003877142000000000003.mpit
+Extrae: Intermediate raw trace file created : /scratch/nas/1/par2107/lab4/set-0/TRACE@boada-11.ac.upc.es.0003877142000000000004.mpit
+Extrae: Intermediate raw trace file created : /scratch/nas/1/par2107/lab4/set-0/TRACE@boada-11.ac.upc.es.0003877142000000000005.mpit
+Extrae: Intermediate raw trace file created : /scratch/nas/1/par2107/lab4/set-0/TRACE@boada-11.ac.upc.es.0003877142000000000006.mpit
+Extrae: Intermediate raw trace file created : /scratch/nas/1/par2107/lab4/set-0/TRACE@boada-11.ac.upc.es.0003877142000000000007.mpit
+Extrae: Intermediate raw trace file created : /scratch/nas/1/par2107/lab4/set-0/TRACE@boada-11.ac.upc.es.0003877142000000000008.mpit
+Extrae: Intermediate raw trace file created : /scratch/nas/1/par2107/lab4/set-0/TRACE@boada-11.ac.upc.es.0003877142000000000009.mpit
+Extrae: Deallocating memory.
+Extrae: Application has ended. Tracing has been terminated.
+mpi2prv: A total of 3 symbols were imported from TRACE.sym file
+mpi2prv: 0 function symbols imported
+mpi2prv: 3 HWC counter descriptions imported
+merger: Output trace format is: Paraver
+merger: Extrae 4.0.1
+mpi2prv: Assigned nodes < boada-11.ac.upc.es >
+mpi2prv: Assigned size per processor < <1 Mbyte >
+mpi2prv: File /scratch/nas/1/par2107/lab4/set-0/TRACE@boada-12.ac.upc.es.0001958152000000000000.mpit is object 1.1.1 on node boada-12.ac.upc.es assigned to processor 0
+mpi2prv: File /scratch/nas/1/par2107/lab4/set-0/TRACE@boada-12.ac.upc.es.0001958152000000000001.mpit is object 1.1.2 on node boada-12.ac.upc.es assigned to processor 0
+mpi2prv: File /scratch/nas/1/par2107/lab4/set-0/TRACE@boada-12.ac.upc.es.0001958152000000000002.mpit is object 1.1.3 on node boada-12.ac.upc.es assigned to processor 0
+mpi2prv: File /scratch/nas/1/par2107/lab4/set-0/TRACE@boada-12.ac.upc.es.0001958152000000000003.mpit is object 1.1.4 on node boada-12.ac.upc.es assigned to processor 0
+mpi2prv: File /scratch/nas/1/par2107/lab4/set-0/TRACE@boada-12.ac.upc.es.0001958152000000000004.mpit is object 1.1.5 on node boada-12.ac.upc.es assigned to processor 0
+mpi2prv: File /scratch/nas/1/par2107/lab4/set-0/TRACE@boada-12.ac.upc.es.0001958152000000000005.mpit is object 1.1.6 on node boada-12.ac.upc.es assigned to processor 0
+mpi2prv: File /scratch/nas/1/par2107/lab4/set-0/TRACE@boada-12.ac.upc.es.0001958152000000000006.mpit is object 1.1.7 on node boada-12.ac.upc.es assigned to processor 0
+mpi2prv: File /scratch/nas/1/par2107/lab4/set-0/TRACE@boada-12.ac.upc.es.0001958152000000000007.mpit is object 1.1.8 on node boada-12.ac.upc.es assigned to processor 0
+mpi2prv: Time synchronization has been turned off
+mpi2prv: Checking for target directory existence... exists, ok!
+Tracing multisort-omp with 12 threads
+Welcome to Extrae 4.0.1
+Extrae: Detected GOMP version is 4.5
+Extrae: Detected and hooked OpenMP runtime: [Intel KMPC] [GNU GOMP]
+Extrae: OMP_NUM_THREADS set to 12
+Extrae: Parsing the configuration file (/Soft/PAR/extrae.xml) begins
+Extrae: Tracing package is located on $EXTRAE_HOME
+Extrae: Generating intermediate files for Paraver traces.
+Extrae: OpenMP routines will collect HW counters information.
+Extrae: User Function routines will collect HW counters information.
+Extrae: PAPI domain set to ALL for HWC set 1
+Extrae: HWC set 1 contains following counters < PAPI_TOT_CYC (0x8000003b) PAPI_TOT_INS (0x80000032) FP_ARITH:512B_PACKED_DOUBLE (0x40000024) > - never changes
+Extrae: Resource usage is disabled at flush buffer.
+Extrae: Memory usage is disabled at flush buffer.
+Extrae: Tracing buffer can hold 500000 events
+Extrae: Circular buffer disabled.
+Extrae: Dynamic memory instrumentation is disabled.
+Extrae: Basic I/O memory instrumentation is disabled.
+Extrae: System calls instrumentation is disabled.
+Extrae: Parsing the configuration file (/Soft/PAR/extrae.xml) has ended
+Extrae: Intermediate traces will be stored in /scratch/nas/1/par2107/lab4
+Extrae: Tracing mode is set to: Detail.
+Extrae: Successfully initiated with 1 tasks and 12 threads
+
+*****************************************************************************************
+Problem size (in number of elements): N=1024, MIN_SORT_SIZE=256, MIN_MERGE_SIZE=256
+Cut-off level:                        CUTOFF=50
+Number of threads in OpenMP:          OMP_NUM_THREADS=12
+*****************************************************************************************
+Initialization time in seconds: 0.024070
+Multisort execution time: 0.195288
+Check sorted data execution time: 0.000524
+Multisort program finished
+*****************************************************************************************
+Extrae: Intermediate raw trace file created : /scratch/nas/1/par2107/lab4/set-0/TRACE@boada-11.ac.upc.es.0003877177000000000000.mpit
+Extrae: Intermediate raw sym file created : /scratch/nas/1/par2107/lab4/set-0/TRACE@boada-11.ac.upc.es.0003877177000000000000.sym
+Extrae: Intermediate raw trace file created : /scratch/nas/1/par2107/lab4/set-0/TRACE@boada-11.ac.upc.es.0003877177000000000001.mpit
+Extrae: Intermediate raw trace file created : /scratch/nas/1/par2107/lab4/set-0/TRACE@boada-11.ac.upc.es.0003877177000000000002.mpit
+Extrae: Intermediate raw trace file created : /scratch/nas/1/par2107/lab4/set-0/TRACE@boada-11.ac.upc.es.0003877177000000000003.mpit
+Extrae: Intermediate raw trace file created : /scratch/nas/1/par2107/lab4/set-0/TRACE@boada-11.ac.upc.es.0003877177000000000004.mpit
+Extrae: Intermediate raw trace file created : /scratch/nas/1/par2107/lab4/set-0/TRACE@boada-11.ac.upc.es.0003877177000000000005.mpit
+Extrae: Intermediate raw trace file created : /scratch/nas/1/par2107/lab4/set-0/TRACE@boada-11.ac.upc.es.0003877177000000000006.mpit
+Extrae: Intermediate raw trace file created : /scratch/nas/1/par2107/lab4/set-0/TRACE@boada-11.ac.upc.es.0003877177000000000007.mpit
+Extrae: Intermediate raw trace file created : /scratch/nas/1/par2107/lab4/set-0/TRACE@boada-11.ac.upc.es.0003877177000000000008.mpit
+Extrae: Intermediate raw trace file created : /scratch/nas/1/par2107/lab4/set-0/TRACE@boada-11.ac.upc.es.0003877177000000000009.mpit
+Extrae: Intermediate raw trace was NOT created : /scratch/nas/1/par2107/lab4/set-0/TRACE@boada-11.ac.upc.es.0003877177000000000010.mpit
+Extrae: Intermediate raw trace file created : /scratch/nas/1/par2107/lab4/set-0/TRACE@boada-11.ac.upc.es.0003877177000000000011.mpit
+Extrae: Deallocating memory.
+Extrae: Application has ended. Tracing has been terminated.
+merger: Output trace format is: Paraver
+merger: Extrae 4.0.1
+Tracing multisort-omp with 14 threads
+Welcome to Extrae 4.0.1
+Extrae: Detected GOMP version is 4.5
+Extrae: Detected and hooked OpenMP runtime: [Intel KMPC] [GNU GOMP]
+Extrae: OMP_NUM_THREADS set to 14
+Extrae: Parsing the configuration file (/Soft/PAR/extrae.xml) begins
+Extrae: Tracing package is located on $EXTRAE_HOME
+Extrae: Generating intermediate files for Paraver traces.
+Extrae: OpenMP routines will collect HW counters information.
+Extrae: User Function routines will collect HW counters information.
+Extrae: PAPI domain set to ALL for HWC set 1
+Extrae: HWC set 1 contains following counters < PAPI_TOT_CYC (0x8000003b) PAPI_TOT_INS (0x80000032) FP_ARITH:512B_PACKED_DOUBLE (0x40000024) > - never changes
+Extrae: Resource usage is disabled at flush buffer.
+Extrae: Memory usage is disabled at flush buffer.
+Extrae: Tracing buffer can hold 500000 events
+Extrae: Circular buffer disabled.
+Extrae: Dynamic memory instrumentation is disabled.
+Extrae: Basic I/O memory instrumentation is disabled.
+Extrae: System calls instrumentation is disabled.
+Extrae: Parsing the configuration file (/Soft/PAR/extrae.xml) has ended
+Extrae: Intermediate traces will be stored in /scratch/nas/1/par2107/lab4
+Extrae: Tracing mode is set to: Detail.
+Extrae: Successfully initiated with 1 tasks and 14 threads
+
+*****************************************************************************************
+Problem size (in number of elements): N=1024, MIN_SORT_SIZE=256, MIN_MERGE_SIZE=256
+Cut-off level:                        CUTOFF=50
+Number of threads in OpenMP:          OMP_NUM_THREADS=14
+*****************************************************************************************
+Initialization time in seconds: 0.024095
+Multisort execution time: 0.198225
+Check sorted data execution time: 0.000534
+Multisort program finished
+*****************************************************************************************
+Extrae: Intermediate raw trace file created : /scratch/nas/1/par2107/lab4/set-0/TRACE@boada-11.ac.upc.es.0003877214000000000000.mpit
+Extrae: Intermediate raw sym file created : /scratch/nas/1/par2107/lab4/set-0/TRACE@boada-11.ac.upc.es.0003877214000000000000.sym
+Extrae: Intermediate raw trace file created : /scratch/nas/1/par2107/lab4/set-0/TRACE@boada-11.ac.upc.es.0003877214000000000001.mpit
+Extrae: Intermediate raw trace file created : /scratch/nas/1/par2107/lab4/set-0/TRACE@boada-11.ac.upc.es.0003877214000000000002.mpit
+Extrae: Intermediate raw trace file created : /scratch/nas/1/par2107/lab4/set-0/TRACE@boada-11.ac.upc.es.0003877214000000000003.mpit
+Extrae: Intermediate raw trace file created : /scratch/nas/1/par2107/lab4/set-0/TRACE@boada-11.ac.upc.es.0003877214000000000004.mpit
+Extrae: Intermediate raw trace file created : /scratch/nas/1/par2107/lab4/set-0/TRACE@boada-11.ac.upc.es.0003877214000000000005.mpit
+Extrae: Intermediate raw trace file created : /scratch/nas/1/par2107/lab4/set-0/TRACE@boada-11.ac.upc.es.0003877214000000000006.mpit
+Extrae: Intermediate raw trace was NOT created : /scratch/nas/1/par2107/lab4/set-0/TRACE@boada-11.ac.upc.es.0003877214000000000007.mpit
+Extrae: Intermediate raw trace file created : /scratch/nas/1/par2107/lab4/set-0/TRACE@boada-11.ac.upc.es.0003877214000000000008.mpit
+Extrae: Intermediate raw trace file created : /scratch/nas/1/par2107/lab4/set-0/TRACE@boada-11.ac.upc.es.0003877214000000000009.mpit
+Extrae: Intermediate raw trace was NOT created : /scratch/nas/1/par2107/lab4/set-0/TRACE@boada-11.ac.upc.es.0003877214000000000010.mpit
+Extrae: Intermediate raw trace was NOT created : /scratch/nas/1/par2107/lab4/set-0/TRACE@boada-11.ac.upc.es.0003877214000000000011.mpit
+Extrae: Intermediate raw trace was NOT created : /scratch/nas/1/par2107/lab4/set-0/TRACE@boada-11.ac.upc.es.0003877214000000000012.mpit
+Extrae: Intermediate raw trace was NOT created : /scratch/nas/1/par2107/lab4/set-0/TRACE@boada-11.ac.upc.es.0003877214000000000013.mpit
+Extrae: Deallocating memory.
+Extrae: Application has ended. Tracing has been terminated.
+merger: Output trace format is: Paraver
+merger: Extrae 4.0.1
+Tracing multisort-omp with 16 threads
+Welcome to Extrae 4.0.1
+Extrae: Detected GOMP version is 4.5
+Extrae: Detected and hooked OpenMP runtime: [Intel KMPC] [GNU GOMP]
+Extrae: OMP_NUM_THREADS set to 16
+Extrae: Parsing the configuration file (/Soft/PAR/extrae.xml) begins
+Extrae: Tracing package is located on $EXTRAE_HOME
+Extrae: Generating intermediate files for Paraver traces.
+Extrae: OpenMP routines will collect HW counters information.
+Extrae: User Function routines will collect HW counters information.
+Extrae: PAPI domain set to ALL for HWC set 1
+Extrae: HWC set 1 contains following counters < PAPI_TOT_CYC (0x8000003b) PAPI_TOT_INS (0x80000032) FP_ARITH:512B_PACKED_DOUBLE (0x40000024) > - never changes
+Extrae: Resource usage is disabled at flush buffer.
+Extrae: Memory usage is disabled at flush buffer.
+Extrae: Tracing buffer can hold 500000 events
+Extrae: Circular buffer disabled.
+Extrae: Dynamic memory instrumentation is disabled.
+Extrae: Basic I/O memory instrumentation is disabled.
+Extrae: System calls instrumentation is disabled.
+Extrae: Parsing the configuration file (/Soft/PAR/extrae.xml) has ended
+Extrae: Intermediate traces will be stored in /scratch/nas/1/par2107/lab4
+Extrae: Tracing mode is set to: Detail.
+Extrae: Successfully initiated with 1 tasks and 16 threads
+
+*****************************************************************************************
+Problem size (in number of elements): N=1024, MIN_SORT_SIZE=256, MIN_MERGE_SIZE=256
+Cut-off level:                        CUTOFF=50
+Number of threads in OpenMP:          OMP_NUM_THREADS=16
+*****************************************************************************************
+Initialization time in seconds: 0.024015
+Multisort execution time: 0.202912
+Check sorted data execution time: 0.000550
+Multisort program finished
+*****************************************************************************************
+Extrae: Intermediate raw trace file created : /scratch/nas/1/par2107/lab4/set-0/TRACE@boada-11.ac.upc.es.0003877253000000000000.mpit
+Extrae: Intermediate raw sym file created : /scratch/nas/1/par2107/lab4/set-0/TRACE@boada-11.ac.upc.es.0003877253000000000000.sym
+Extrae: Intermediate raw trace file created : /scratch/nas/1/par2107/lab4/set-0/TRACE@boada-11.ac.upc.es.0003877253000000000001.mpit
+Extrae: Intermediate raw trace file created : /scratch/nas/1/par2107/lab4/set-0/TRACE@boada-11.ac.upc.es.0003877253000000000002.mpit
+Extrae: Intermediate raw trace file created : /scratch/nas/1/par2107/lab4/set-0/TRACE@boada-11.ac.upc.es.0003877253000000000003.mpit
+Extrae: Intermediate raw trace file created : /scratch/nas/1/par2107/lab4/set-0/TRACE@boada-11.ac.upc.es.0003877253000000000004.mpit
+Extrae: Intermediate raw trace file created : /scratch/nas/1/par2107/lab4/set-0/TRACE@boada-11.ac.upc.es.0003877253000000000005.mpit
+Extrae: Intermediate raw trace file created : /scratch/nas/1/par2107/lab4/set-0/TRACE@boada-11.ac.upc.es.0003877253000000000006.mpit
+Extrae: Intermediate raw trace file created : /scratch/nas/1/par2107/lab4/set-0/TRACE@boada-11.ac.upc.es.0003877253000000000007.mpit
+Extrae: Intermediate raw trace file created : /scratch/nas/1/par2107/lab4/set-0/TRACE@boada-11.ac.upc.es.0003877253000000000008.mpit
+Extrae: Intermediate raw trace file created : /scratch/nas/1/par2107/lab4/set-0/TRACE@boada-11.ac.upc.es.0003877253000000000009.mpit
+Extrae: Intermediate raw trace was NOT created : /scratch/nas/1/par2107/lab4/set-0/TRACE@boada-11.ac.upc.es.0003877253000000000010.mpit
+Extrae: Intermediate raw trace was NOT created : /scratch/nas/1/par2107/lab4/set-0/TRACE@boada-11.ac.upc.es.0003877253000000000011.mpit
+Extrae: Intermediate raw trace was NOT created : /scratch/nas/1/par2107/lab4/set-0/TRACE@boada-11.ac.upc.es.0003877253000000000012.mpit
+Extrae: Intermediate raw trace was NOT created : /scratch/nas/1/par2107/lab4/set-0/TRACE@boada-11.ac.upc.es.0003877253000000000013.mpit
+Extrae: Intermediate raw trace was NOT created : /scratch/nas/1/par2107/lab4/set-0/TRACE@boada-11.ac.upc.es.0003877253000000000014.mpit
+Extrae: Intermediate raw trace was NOT created : /scratch/nas/1/par2107/lab4/set-0/TRACE@boada-11.ac.upc.es.0003877253000000000015.mpit
+Extrae: Deallocating memory.
+Extrae: Application has ended. Tracing has been terminated.
+merger: Output trace format is: Paraver
+merger: Extrae 4.0.1
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex)
+ restricted \write18 enabled.
+entering extended mode
+(../modelfactor-tables.tex
+LaTeX2e <2021-11-15> patch level 1
+L3 programming layer <2022-01-21>
+(/usr/share/texlive/texmf-dist/tex/latex/base/report.cls
+Document Class: report 2021/10/04 v1.4n Standard LaTeX document class
+(/usr/share/texlive/texmf-dist/tex/latex/base/size10.clo))
+(/usr/share/texlive/texmf-dist/tex/latex/base/inputenc.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/graphicx.sty
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/keyval.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/graphics.sty
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/trig.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/graphics-cfg/graphics.cfg)
+(/usr/share/texlive/texmf-dist/tex/latex/graphics-def/pdftex.def)))
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/amssymb.sty
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/amsfonts.sty))
+(/usr/share/texlive/texmf-dist/tex/latex/tools/xspace.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/preprint/fullpage.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/multirow/multirow.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/pdflscape/pdflscape.sty
+(/usr/share/texlive/texmf-dist/tex/generic/iftex/iftex.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/lscape.sty))
+(/usr/share/texlive/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def)
+No file modelfactor-tables.aux.
+(/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
+[Loading MPS to PDF converter (version 2006.09.02).]
+) (/usr/share/texlive/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
+(/usr/share/texlive/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg))
+(./table1.tex (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd)
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd)
+Overfull \hbox (24.81113pt too wide) in paragraph at lines 3--17
+ [] 
+) [1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] (./table2.tex)
+(./table3.tex
+Overfull \hbox (60.60626pt too wide) in paragraph at lines 3--26
+ [] 
+) [2] (./modelfactor-tables.aux) )
+(see the transcript file for additional information)</usr/share/texlive/texmf-d
+ist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fo
+nts/type1/public/amsfonts/cm/cmr10.pfb>
+Output written on modelfactor-tables.pdf (2 pages, 32938 bytes).
+Transcript written on modelfactor-tables.log.

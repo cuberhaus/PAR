@@ -1,0 +1,3 @@
+icc  -c -g -std=c99 -Wall -O2 -fp-model precise kernels.c -o kernels.o
+icc  -g -std=c99 -Wall -O2 -fp-model precise -qopenmp_stubs multisort.c kernels.o -lm -o multisort-seq
+icc  -g -std=c99 -Wall -O2 -fp-model precise -fopenmp multisort-omp.c kernels.o -lm -o multisort-omp

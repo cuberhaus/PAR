@@ -1,0 +1,160 @@
+*****************************************************************************************
+Problem size (in number of elements): N=32768, MIN_SORT_SIZE=128, MIN_MERGE_SIZE=128
+Cut-off level:                        CUTOFF=0
+Number of threads in OpenMP:          OMP_NUM_THREADS=2
+*****************************************************************************************
+Initialization time in seconds: 0.680871
+Multisort execution time: 3.049783
+Check sorted data execution time: 0.014842
+Multisort program finished
+*****************************************************************************************
+*****************************************************************************************
+Problem size (in number of elements): N=32768, MIN_SORT_SIZE=128, MIN_MERGE_SIZE=128
+Cut-off level:                        CUTOFF=1
+Number of threads in OpenMP:          OMP_NUM_THREADS=2
+*****************************************************************************************
+Initialization time in seconds: 0.687594
+Multisort execution time: 2.924097
+Check sorted data execution time: 0.014831
+Multisort program finished
+*****************************************************************************************
+*****************************************************************************************
+Problem size (in number of elements): N=32768, MIN_SORT_SIZE=128, MIN_MERGE_SIZE=128
+Cut-off level:                        CUTOFF=2
+Number of threads in OpenMP:          OMP_NUM_THREADS=2
+*****************************************************************************************
+Initialization time in seconds: 0.684652
+Multisort execution time: 2.898844
+Check sorted data execution time: 0.039141
+Multisort program finished
+*****************************************************************************************
+*****************************************************************************************
+Problem size (in number of elements): N=32768, MIN_SORT_SIZE=128, MIN_MERGE_SIZE=128
+Cut-off level:                        CUTOFF=3
+Number of threads in OpenMP:          OMP_NUM_THREADS=2
+*****************************************************************************************
+Initialization time in seconds: 0.686637
+Multisort execution time: 2.890107
+Check sorted data execution time: 0.014650
+Multisort program finished
+*****************************************************************************************
+*****************************************************************************************
+Problem size (in number of elements): N=32768, MIN_SORT_SIZE=128, MIN_MERGE_SIZE=128
+Cut-off level:                        CUTOFF=4
+Number of threads in OpenMP:          OMP_NUM_THREADS=2
+*****************************************************************************************
+Initialization time in seconds: 0.686844
+Multisort execution time: 2.890118
+Check sorted data execution time: 0.014661
+Multisort program finished
+*****************************************************************************************
+*****************************************************************************************
+Problem size (in number of elements): N=32768, MIN_SORT_SIZE=128, MIN_MERGE_SIZE=128
+Cut-off level:                        CUTOFF=5
+Number of threads in OpenMP:          OMP_NUM_THREADS=2
+*****************************************************************************************
+Initialization time in seconds: 0.686840
+Multisort execution time: 2.889028
+Check sorted data execution time: 0.014557
+Multisort program finished
+*****************************************************************************************
+*****************************************************************************************
+Problem size (in number of elements): N=32768, MIN_SORT_SIZE=128, MIN_MERGE_SIZE=128
+Cut-off level:                        CUTOFF=6
+Number of threads in OpenMP:          OMP_NUM_THREADS=2
+*****************************************************************************************
+Initialization time in seconds: 0.686621
+Multisort execution time: 2.909952
+Check sorted data execution time: 0.014516
+Multisort program finished
+*****************************************************************************************
+*****************************************************************************************
+Problem size (in number of elements): N=32768, MIN_SORT_SIZE=128, MIN_MERGE_SIZE=128
+Cut-off level:                        CUTOFF=7
+Number of threads in OpenMP:          OMP_NUM_THREADS=2
+*****************************************************************************************
+Initialization time in seconds: 0.686077
+Multisort execution time: 2.950332
+Check sorted data execution time: 0.014357
+Multisort program finished
+*****************************************************************************************
+*****************************************************************************************
+Problem size (in number of elements): N=32768, MIN_SORT_SIZE=128, MIN_MERGE_SIZE=128
+Cut-off level:                        CUTOFF=8
+Number of threads in OpenMP:          OMP_NUM_THREADS=2
+*****************************************************************************************
+Initialization time in seconds: 0.686734
+Multisort execution time: 3.159998
+Check sorted data execution time: 0.016032
+Multisort program finished
+*****************************************************************************************
+*****************************************************************************************
+Problem size (in number of elements): N=32768, MIN_SORT_SIZE=128, MIN_MERGE_SIZE=128
+Cut-off level:                        CUTOFF=9
+Number of threads in OpenMP:          OMP_NUM_THREADS=2
+*****************************************************************************************
+Initialization time in seconds: 0.688268
+Multisort execution time: 3.299835
+Check sorted data execution time: 0.014452
+Multisort program finished
+*****************************************************************************************
+*****************************************************************************************
+Problem size (in number of elements): N=32768, MIN_SORT_SIZE=128, MIN_MERGE_SIZE=128
+Cut-off level:                        CUTOFF=10
+Number of threads in OpenMP:          OMP_NUM_THREADS=2
+*****************************************************************************************
+Initialization time in seconds: 0.688186
+Multisort execution time: 3.591616
+Check sorted data execution time: 0.014389
+Multisort program finished
+*****************************************************************************************
+*****************************************************************************************
+Problem size (in number of elements): N=32768, MIN_SORT_SIZE=128, MIN_MERGE_SIZE=128
+Cut-off level:                        CUTOFF=11
+Number of threads in OpenMP:          OMP_NUM_THREADS=2
+*****************************************************************************************
+Initialization time in seconds: 0.687050
+Multisort execution time: 3.837564
+Check sorted data execution time: 0.014424
+Multisort program finished
+*****************************************************************************************
+*****************************************************************************************
+Problem size (in number of elements): N=32768, MIN_SORT_SIZE=128, MIN_MERGE_SIZE=128
+Cut-off level:                        CUTOFF=12
+Number of threads in OpenMP:          OMP_NUM_THREADS=2
+*****************************************************************************************
+Initialization time in seconds: 0.686364
+Multisort execution time: 4.087157
+Check sorted data execution time: 0.014427
+Multisort program finished
+*****************************************************************************************
+*****************************************************************************************
+Problem size (in number of elements): N=32768, MIN_SORT_SIZE=128, MIN_MERGE_SIZE=128
+Cut-off level:                        CUTOFF=13
+Number of threads in OpenMP:          OMP_NUM_THREADS=2
+*****************************************************************************************
+Initialization time in seconds: 0.686981
+Multisort execution time: 4.374135
+Check sorted data execution time: 0.014352
+Multisort program finished
+*****************************************************************************************
+*****************************************************************************************
+Problem size (in number of elements): N=32768, MIN_SORT_SIZE=128, MIN_MERGE_SIZE=128
+Cut-off level:                        CUTOFF=14
+Number of threads in OpenMP:          OMP_NUM_THREADS=2
+*****************************************************************************************
+Initialization time in seconds: 0.686844
+Multisort execution time: 4.613510
+Check sorted data execution time: 0.014385
+Multisort program finished
+*****************************************************************************************
+*****************************************************************************************
+Problem size (in number of elements): N=32768, MIN_SORT_SIZE=128, MIN_MERGE_SIZE=128
+Cut-off level:                        CUTOFF=15
+Number of threads in OpenMP:          OMP_NUM_THREADS=2
+*****************************************************************************************
+Initialization time in seconds: 0.686166
+Multisort execution time: 4.853081
+Check sorted data execution time: 0.014434
+Multisort program finished
+*****************************************************************************************

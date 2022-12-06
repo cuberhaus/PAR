@@ -1,0 +1,14 @@
+icc  -g -std=c99 -Wall -O2 -fp-model precise -fopenmp multisort-omp.c kernels.o -lm -o multisort-omp
+::::::::::::::
+multisort-omp_8_boada-11.times.txt
+::::::::::::::
+*****************************************************************************************
+Problem size (in number of elements): N=32768, MIN_SORT_SIZE=1024, MIN_MERGE_SIZE=1024
+Cut-off level:                        CUTOFF=50
+Number of threads in OpenMP:          OMP_NUM_THREADS=8
+*****************************************************************************************
+Initialization time in seconds: 0.096876
+Multisort execution time: 0.754026
+Check sorted data execution time: 0.015184
+Multisort program finished
+*****************************************************************************************

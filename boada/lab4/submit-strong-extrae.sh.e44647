@@ -1,0 +1,118 @@
+Extrae: WARNING! omp_get_thread_num_real is a NULL pointer. Did the initialization of this module trigger? Retrying initialization...
+Extrae: Warning! Cannot open ./user-functions.dat file
+Extrae: Warning! Cannot open ./user-functions.dat file
+mpi2prv: Retrieving hardware counters definitions for ptask 1 from global SYM.
+fopen: No such file or directory
+mpi2prv Error: Opening trace file ./set-0/TRACE@boada-11.ac.upc.es.0003877078000000000000.mpit
+AddFile_FS: No such file or directory
+mpi2prv: Error creating file set
+mpi2prv: Error! Some of the processors failed create trace descriptors
+mpi2prv: An error has been encountered when generating the tracefile. Dying...
+grep: multisort-omp-strong-extrae/multisort-omp-1-boada-12.prv: No such file or directory
+grep: multisort-omp-strong-extrae/multisort-omp-1-boada-12.prv: No such file or directory
+  [ERROR] Missing tracefile or unrecognized tracefile format.
+rm: cannot remove 'multisort-omp-strong-extrae/multisort-omp-1-boada-12.*': No such file or directory
+Extrae: WARNING! omp_get_thread_num_real is a NULL pointer. Did the initialization of this module trigger? Retrying initialization...
+Extrae: Warning! Cannot open ./user-functions.dat file
+Extrae: Warning! Cannot open ./user-functions.dat file
+rename: No such file or directory
+Extrae: Error while trying to move /scratch/nas/1/par2107/lab4/set-0/TRACE@boada-12.ac.upc.es.0001958062000000000000.ttmp to /scratch/nas/1/par2107/lab4/set-0/TRACE@boada-12.ac.upc.es.0001958062000000000000.mpit
+rename: No such file or directory
+Extrae: Error while trying to move /scratch/nas/1/par2107/lab4/set-0/TRACE@boada-12.ac.upc.es.0001958062000000000001.ttmp to /scratch/nas/1/par2107/lab4/set-0/TRACE@boada-12.ac.upc.es.0001958062000000000001.mpit
+mpi2prv: Unable to open TRACE.mpits file.
+mpi2prv: No intermediate trace files given.
+grep: multisort-omp-strong-extrae/multisort-omp-2-boada-12.prv: No such file or directory
+grep: multisort-omp-strong-extrae/multisort-omp-2-boada-12.prv: No such file or directory
+  [ERROR] Missing tracefile or unrecognized tracefile format.
+rm: cannot remove 'multisort-omp-strong-extrae/multisort-omp-2-boada-12.*': No such file or directory
+Extrae: WARNING! omp_get_thread_num_real is a NULL pointer. Did the initialization of this module trigger? Retrying initialization...
+Extrae: Warning! Cannot open ./user-functions.dat file
+Extrae: Warning! Cannot open ./user-functions.dat file
+mpi2prv: Retrieving hardware counters definitions for ptask 1 from global SYM.
+fopen: No such file or directory
+mpi2prv Error: Opening trace file ./set-0/TRACE@boada-11.ac.upc.es.0003877109000000000000.mpit
+AddFile_FS: No such file or directory
+mpi2prv: Error creating file set
+mpi2prv: Error! Some of the processors failed create trace descriptors
+mpi2prv: An error has been encountered when generating the tracefile. Dying...
+grep: multisort-omp-strong-extrae/multisort-omp-4-boada-12.prv: No such file or directory
+grep: multisort-omp-strong-extrae/multisort-omp-4-boada-12.prv: No such file or directory
+  [ERROR] Missing tracefile or unrecognized tracefile format.
+rm: cannot remove 'multisort-omp-strong-extrae/multisort-omp-4-boada-12.*': No such file or directory
+Extrae: WARNING! omp_get_thread_num_real is a NULL pointer. Did the initialization of this module trigger? Retrying initialization...
+Extrae: Warning! Cannot open ./user-functions.dat file
+Extrae: Warning! Cannot open ./user-functions.dat file
+rename: No such file or directory
+Extrae: Error while trying to move /scratch/nas/1/par2107/lab4/set-0/TRACE@boada-12.ac.upc.es.0001958121000000000000.ttmp to /scratch/nas/1/par2107/lab4/set-0/TRACE@boada-12.ac.upc.es.0001958121000000000000.mpit
+rename: No such file or directory
+Extrae: Error while trying to move /scratch/nas/1/par2107/lab4/set-0/TRACE@boada-12.ac.upc.es.0001958121000000000001.ttmp to /scratch/nas/1/par2107/lab4/set-0/TRACE@boada-12.ac.upc.es.0001958121000000000001.mpit
+rename: No such file or directory
+Extrae: Error while trying to move /scratch/nas/1/par2107/lab4/set-0/TRACE@boada-12.ac.upc.es.0001958121000000000002.ttmp to /scratch/nas/1/par2107/lab4/set-0/TRACE@boada-12.ac.upc.es.0001958121000000000002.mpit
+rename: No such file or directory
+Extrae: Error while trying to move /scratch/nas/1/par2107/lab4/set-0/TRACE@boada-12.ac.upc.es.0001958121000000000003.ttmp to /scratch/nas/1/par2107/lab4/set-0/TRACE@boada-12.ac.upc.es.0001958121000000000003.mpit
+rename: No such file or directory
+Extrae: Error while trying to move /scratch/nas/1/par2107/lab4/set-0/TRACE@boada-12.ac.upc.es.0001958121000000000004.ttmp to /scratch/nas/1/par2107/lab4/set-0/TRACE@boada-12.ac.upc.es.0001958121000000000004.mpit
+rename: No such file or directory
+Extrae: Error while trying to move /scratch/nas/1/par2107/lab4/set-0/TRACE@boada-12.ac.upc.es.0001958121000000000005.ttmp to /scratch/nas/1/par2107/lab4/set-0/TRACE@boada-12.ac.upc.es.0001958121000000000005.mpit
+mpi2prv: Retrieving hardware counters definitions for ptask 1 from global SYM.
+fopen: No such file or directory
+mpi2prv Error: Opening trace file ./set-0/TRACE@boada-12.ac.upc.es.0001958121000000000000.mpit
+AddFile_FS: No such file or directory
+mpi2prv: Error creating file set
+mpi2prv: Error! Some of the processors failed create trace descriptors
+mpi2prv: An error has been encountered when generating the tracefile. Dying...
+grep: multisort-omp-strong-extrae/multisort-omp-6-boada-12.prv: No such file or directory
+grep: multisort-omp-strong-extrae/multisort-omp-6-boada-12.prv: No such file or directory
+  [ERROR] Missing tracefile or unrecognized tracefile format.
+rm: cannot remove 'multisort-omp-strong-extrae/multisort-omp-6-boada-12.*': No such file or directory
+Extrae: WARNING! omp_get_thread_num_real is a NULL pointer. Did the initialization of this module trigger? Retrying initialization...
+Extrae: Warning! Cannot open ./user-functions.dat file
+Extrae: Warning! Cannot open ./user-functions.dat file
+mpi2prv: Retrieving hardware counters definitions for ptask 1 from global SYM.
+Extrae: WARNING! omp_get_thread_num_real is a NULL pointer. Did the initialization of this module trigger? Retrying initialization...
+Extrae: Warning! Cannot open ./user-functions.dat file
+Extrae: Warning! Cannot open ./user-functions.dat file
+mpi2prv: Retrieving hardware counters definitions for ptask 1 from global SYM.
+fopen: No such file or directory
+mpi2prv Error: Opening trace file ./set-0/TRACE@boada-11.ac.upc.es.0003877177000000000007.mpit
+AddFile_FS: No such file or directory
+mpi2prv: Error creating file set
+mpi2prv: Error! Some of the processors failed create trace descriptors
+mpi2prv: An error has been encountered when generating the tracefile. Dying...
+grep: multisort-omp-strong-extrae/multisort-omp-10-boada-12.prv: No such file or directory
+grep: multisort-omp-strong-extrae/multisort-omp-10-boada-12.prv: No such file or directory
+  [ERROR] Missing tracefile or unrecognized tracefile format.
+rm: cannot remove 'multisort-omp-strong-extrae/multisort-omp-10-boada-12.*': No such file or directory
+Extrae: WARNING! omp_get_thread_num_real is a NULL pointer. Did the initialization of this module trigger? Retrying initialization...
+Extrae: Warning! Cannot open ./user-functions.dat file
+Extrae: Warning! Cannot open ./user-functions.dat file
+mpi2prv: Retrieving hardware counters definitions for ptask 1 from global SYM.
+fopen: No such file or directory
+mpi2prv Error: Opening trace file ./set-0/TRACE@boada-11.ac.upc.es.0003877214000000000005.mpit
+AddFile_FS: No such file or directory
+mpi2prv: Error creating file set
+mpi2prv: Error! Some of the processors failed create trace descriptors
+mpi2prv: An error has been encountered when generating the tracefile. Dying...
+grep: multisort-omp-strong-extrae/multisort-omp-12-boada-12.prv: No such file or directory
+grep: multisort-omp-strong-extrae/multisort-omp-12-boada-12.prv: No such file or directory
+  [ERROR] Missing tracefile or unrecognized tracefile format.
+rm: cannot remove 'multisort-omp-strong-extrae/multisort-omp-12-boada-12.*': No such file or directory
+Extrae: WARNING! omp_get_thread_num_real is a NULL pointer. Did the initialization of this module trigger? Retrying initialization...
+Extrae: Warning! Cannot open ./user-functions.dat file
+Extrae: Warning! Cannot open ./user-functions.dat file
+mpi2prv: Retrieving hardware counters definitions for ptask 1 from global SYM.
+fopen: No such file or directory
+mpi2prv Error: Opening trace file ./set-0/TRACE@boada-11.ac.upc.es.0003877253000000000001.mpit
+AddFile_FS: No such file or directory
+mpi2prv: Error creating file set
+mpi2prv: Error! Some of the processors failed create trace descriptors
+mpi2prv: An error has been encountered when generating the tracefile. Dying...
+grep: multisort-omp-strong-extrae/multisort-omp-14-boada-12.prv: No such file or directory
+grep: multisort-omp-strong-extrae/multisort-omp-14-boada-12.prv: No such file or directory
+  [ERROR] Missing tracefile or unrecognized tracefile format.
+rm: cannot remove 'multisort-omp-strong-extrae/multisort-omp-14-boada-12.*': No such file or directory
+Extrae: WARNING! omp_get_thread_num_real is a NULL pointer. Did the initialization of this module trigger? Retrying initialization...
+Extrae: Warning! Cannot open ./user-functions.dat file
+Extrae: Warning! Cannot open ./user-functions.dat file
+mpi2prv: Retrieving hardware counters definitions for ptask 1 from global SYM.
+rm: cannot remove 'modelfactors_tmp.tex': No such file or directory
