@@ -1,0 +1,34 @@
+-> Simulator configuration to be read .tareador_gui_intermediate/cut_ODZhOWI3/D_N2UzMWU1//simulations/MN_20cores.cfg
+-> Loading default random values
+-> Loading scheduler configuration from file scheduling.cfg
+   * Scheduling policy selected SS_MPI_CP
+   * Machine 0. Policy: SS_MPI_CP
+   * Loading default communications configuration
+-> Loding initial memory status
+-> Loding initial semaphores status
+-> Loading default file sytem configuration
+
+80.000000000: END SIMULATION
+
+**** Application 0 (.tareador_gui_intermediate/cut_ODZhOWI3/D_N2UzMWU1/dim.dim) ****
+
+**** Total Statistics ****
+
+Execution time:	79.908621000
+Speedup:	0.00 
+CPU Time:	0.004300000
+
+ Id.	Computation	%time	Communication
+  0	0.004300000	0.01	79.904317440
+
+ Id.	Mess.sent	Bytes sent	Immediate recv	Waiting recv	Bytes recv	Coll.op.	Block time	Comm. time	Wait link time	Wait buses time	I/O time
+  0	8.000000e+01	8.000000e+01	8.000000e+00	8.000000e+00	1.600000e+01	0.000000e+00	0.000000000	0.000000000	0.000000000	0.000000000	0.000000000
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Total	8.000000e+01	8.000000e+01	8.000000e+00	8.000000e+00	1.600000e+01	0.000000e+00	0.000000e+00	0.000000e+00	0.000000e+00	0.000000e+00	0.000000e+00	
+Average	8.000000e+01	8.000000e+01	8.000000e+00	8.000000e+00	1.600000e+01	0.000000e+00	0.000000e+00	0.000000e+00	0.000000e+00	0.000000e+00	0.000000e+00	
+Maximum	8.000000e+01	8.000000e+01	8.000000e+00	8.000000e+00	1.600000e+01	0.000000e+00	0.000000e+00	0.000000e+00	0.000000e+00	0.000000e+00	0.000000e+00	
+Minimum	8.000000e+01	8.000000e+01	8.000000e+00	8.000000e+00	1.600000e+01	0.000000e+00	0.000000e+00	0.000000e+00	0.000000e+00	0.000000e+00	0.000000e+00	
+Stdev	0.000000e+00	0.000000e+00	0.000000e+00	0.000000e+00	0.000000e+00	0.000000e+00	0.000000e+00	0.000000e+00	0.000000e+00	0.000000e+00	0.000000e+00	
+
+Output Paraver trace ".tareador_gui_intermediate/cut_ODZhOWI3/D_N2UzMWU1//simulations/prv_20cores.prv" generated
+

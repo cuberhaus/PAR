@@ -1,0 +1,324 @@
+icc  -g -std=c99 -Wall -O2 -fp-model precise -qopenmp_stubs multisort.c kernels.o -lm -o multisort-seq
+icc  -g -std=c99 -Wall -O2 -fp-model precise -fopenmp multisort-omp.c kernels.o -lm -o multisort-omp
+Executing multisort-seq sequentially
+Run 0...Elapsed time = 6.00
+Partial time = 5.252735
+Run 1...Elapsed time = 5.90
+Partial time = 5.194173
+Run 2...Elapsed time = 5.89
+Partial time = 5.186197
+ELAPSED TIME MIN OF 3 EXECUTIONS =5.89
+
+MULTISORT TIME MIN OF 3 EXECUTIONS =5.186197
+
+multisort-omp 1 20 3
+Starting OpenMP executions...
+Executing multisort-omp with 1 threads
+Run 0...Elapsed time = 5.85
+Partial time = 5.146150
+Run 1...Elapsed time = 5.84
+Partial time = 5.135890
+Run 2...Elapsed time = 5.84
+Partial time = 5.129699
+ELAPSED TIME MIN OF 3 EXECUTIONS =5.84
+
+MULTISORT TIME MIN OF 3 EXECUTIONS =5.129699
+
+Executing multisort-omp with 2 threads
+Run 0...Elapsed time = 3.73
+Partial time = 3.017563
+Run 1...Elapsed time = 3.74
+Partial time = 3.027116
+Run 2...Elapsed time = 3.73
+Partial time = 3.016790
+ELAPSED TIME MIN OF 3 EXECUTIONS =3.73
+
+MULTISORT TIME MIN OF 3 EXECUTIONS =3.016790
+
+Executing multisort-omp with 3 threads
+Run 0...Elapsed time = 3.04
+Partial time = 2.327376
+Run 1...Elapsed time = 3.09
+Partial time = 2.372918
+Run 2...Elapsed time = 3.04
+Partial time = 2.332884
+ELAPSED TIME MIN OF 3 EXECUTIONS =3.04
+
+MULTISORT TIME MIN OF 3 EXECUTIONS =2.327376
+
+Executing multisort-omp with 4 threads
+Run 0...Elapsed time = 2.36
+Partial time = 1.650204
+Run 1...Elapsed time = 2.37
+Partial time = 1.659283
+Run 2...Elapsed time = 2.37
+Partial time = 1.652221
+ELAPSED TIME MIN OF 3 EXECUTIONS =2.36
+
+MULTISORT TIME MIN OF 3 EXECUTIONS =1.650204
+
+Executing multisort-omp with 5 threads
+Run 0...Elapsed time = 2.22
+Partial time = 1.505480
+Run 1...Elapsed time = 2.21
+Partial time = 1.502865
+Run 2...Elapsed time = 2.22
+Partial time = 1.509330
+ELAPSED TIME MIN OF 3 EXECUTIONS =2.21
+
+MULTISORT TIME MIN OF 3 EXECUTIONS =1.502865
+
+Executing multisort-omp with 6 threads
+Run 0...Elapsed time = 2.13
+Partial time = 1.420178
+Run 1...Elapsed time = 2.14
+Partial time = 1.427762
+Run 2...Elapsed time = 2.14
+Partial time = 1.422930
+ELAPSED TIME MIN OF 3 EXECUTIONS =2.13
+
+MULTISORT TIME MIN OF 3 EXECUTIONS =1.420178
+
+Executing multisort-omp with 7 threads
+Run 0...Elapsed time = 2.06
+Partial time = 1.344486
+Run 1...Elapsed time = 2.07
+Partial time = 1.355857
+Run 2...Elapsed time = 2.06
+Partial time = 1.341770
+ELAPSED TIME MIN OF 3 EXECUTIONS =2.06
+
+MULTISORT TIME MIN OF 3 EXECUTIONS =1.341770
+
+Executing multisort-omp with 8 threads
+Run 0...Elapsed time = 2.13
+Partial time = 1.414848
+Run 1...Elapsed time = 2.08
+Partial time = 1.369144
+Run 2...Elapsed time = 2.11
+Partial time = 1.391098
+ELAPSED TIME MIN OF 3 EXECUTIONS =2.08
+
+MULTISORT TIME MIN OF 3 EXECUTIONS =1.369144
+
+Executing multisort-omp with 9 threads
+Run 0...Elapsed time = 2.19
+Partial time = 1.480120
+Run 1...Elapsed time = 2.28
+Partial time = 1.571190
+Run 2...Elapsed time = 2.19
+Partial time = 1.471700
+ELAPSED TIME MIN OF 3 EXECUTIONS =2.19
+
+MULTISORT TIME MIN OF 3 EXECUTIONS =1.471700
+
+Executing multisort-omp with 10 threads
+Run 0...Elapsed time = 2.48
+Partial time = 1.769013
+Run 1...Elapsed time = 2.50
+Partial time = 1.782297
+Run 2...Elapsed time = 2.61
+Partial time = 1.892509
+ELAPSED TIME MIN OF 3 EXECUTIONS =2.48
+
+MULTISORT TIME MIN OF 3 EXECUTIONS =1.769013
+
+Executing multisort-omp with 11 threads
+Run 0...Elapsed time = 2.80
+Partial time = 2.080586
+Run 1...Elapsed time = 2.84
+Partial time = 2.122816
+Run 2...Elapsed time = 2.71
+Partial time = 1.992977
+ELAPSED TIME MIN OF 3 EXECUTIONS =2.71
+
+MULTISORT TIME MIN OF 3 EXECUTIONS =1.992977
+
+Executing multisort-omp with 12 threads
+Run 0...Elapsed time = 2.85
+Partial time = 2.139438
+Run 1...Elapsed time = 2.79
+Partial time = 2.073943
+Run 2...Elapsed time = 2.87
+Partial time = 2.150806
+ELAPSED TIME MIN OF 3 EXECUTIONS =2.79
+
+MULTISORT TIME MIN OF 3 EXECUTIONS =2.073943
+
+Executing multisort-omp with 13 threads
+Run 0...Elapsed time = 2.77
+Partial time = 2.053605
+Run 1...Elapsed time = 2.69
+Partial time = 1.977536
+Run 2...Elapsed time = 2.72
+Partial time = 2.001669
+ELAPSED TIME MIN OF 3 EXECUTIONS =2.69
+
+MULTISORT TIME MIN OF 3 EXECUTIONS =1.977536
+
+Executing multisort-omp with 14 threads
+Run 0...Elapsed time = 3.02
+Partial time = 2.300037
+Run 1...Elapsed time = 2.99
+Partial time = 2.270457
+Run 2...Elapsed time = 2.97
+Partial time = 2.253162
+ELAPSED TIME MIN OF 3 EXECUTIONS =2.97
+
+MULTISORT TIME MIN OF 3 EXECUTIONS =2.253162
+
+Executing multisort-omp with 15 threads
+Run 0...Elapsed time = 3.01
+Partial time = 2.294503
+Run 1...Elapsed time = 3.03
+Partial time = 2.311026
+Run 2...Elapsed time = 3.01
+Partial time = 2.296342
+ELAPSED TIME MIN OF 3 EXECUTIONS =3.01
+
+MULTISORT TIME MIN OF 3 EXECUTIONS =2.294503
+
+Executing multisort-omp with 16 threads
+Run 0...Elapsed time = 3.13
+Partial time = 2.412692
+Run 1...Elapsed time = 3.14
+Partial time = 2.419816
+Run 2...Elapsed time = 3.08
+Partial time = 2.365291
+ELAPSED TIME MIN OF 3 EXECUTIONS =3.08
+
+MULTISORT TIME MIN OF 3 EXECUTIONS =2.365291
+
+Executing multisort-omp with 17 threads
+Run 0...Elapsed time = 3.21
+Partial time = 2.496964
+Run 1...Elapsed time = 3.05
+Partial time = 2.329748
+Run 2...Elapsed time = 3.25
+Partial time = 2.531355
+ELAPSED TIME MIN OF 3 EXECUTIONS =3.05
+
+MULTISORT TIME MIN OF 3 EXECUTIONS =2.329748
+
+Executing multisort-omp with 18 threads
+Run 0...Elapsed time = 3.32
+Partial time = 2.606848
+Run 1...Elapsed time = 3.15
+Partial time = 2.438477
+Run 2...Elapsed time = 3.15
+Partial time = 2.430247
+ELAPSED TIME MIN OF 3 EXECUTIONS =3.15
+
+MULTISORT TIME MIN OF 3 EXECUTIONS =2.430247
+
+Executing multisort-omp with 19 threads
+Run 0...Elapsed time = 3.13
+Partial time = 2.411544
+Run 1...Elapsed time = 3.13
+Partial time = 2.414490
+Run 2...Elapsed time = 3.12
+Partial time = 2.404631
+ELAPSED TIME MIN OF 3 EXECUTIONS =3.12
+
+MULTISORT TIME MIN OF 3 EXECUTIONS =2.404631
+
+Executing multisort-omp with 20 threads
+Run 0...Elapsed time = 3.21
+Partial time = 2.492331
+Run 1...Elapsed time = 3.17
+Partial time = 2.456539
+Run 2...Elapsed time = 3.22
+Partial time = 2.497419
+ELAPSED TIME MIN OF 3 EXECUTIONS =3.17
+
+MULTISORT TIME MIN OF 3 EXECUTIONS =2.456539
+
+Resultat de l'experiment (tambe es troben a  ./speedup1-boada-11.txt  ,  ./speedup2-boada-11.txt  , ./elapsed1-boada-11.txt  i  ./elapsed2-boada-11.txt  )
+#threads	Speedup (global)
+1   1.00856164383561643835
+2   1.57908847184986595174
+3   1.93750000000000000000
+4   2.49576271186440677966
+5   2.66515837104072398190
+6   2.76525821596244131455
+7   2.85922330097087378640
+8   2.83173076923076923076
+9   2.68949771689497716894
+10   2.37500000000000000000
+11   2.17343173431734317343
+12   2.11111111111111111111
+13   2.18959107806691449814
+14   1.98316498316498316498
+15   1.95681063122923588039
+16   1.91233766233766233766
+17   1.93114754098360655737
+18   1.86984126984126984126
+19   1.88782051282051282051
+20   1.85804416403785488958
+
+#threads	Speedup (partial)
+1   1.01101390159539575324
+2   1.71911104186900646050
+3   2.22834514062188490385
+4   3.14276113741088980513
+5   3.45087349828494242663
+6   3.65179364840182005354
+7   3.86519075549460786871
+8   3.78791200925541798379
+9   3.52394985391044370455
+10   2.93168959187976572246
+11   2.60223625260100844114
+12   2.50064587117389436450
+13   2.62255503818893815333
+14   2.30174173006645771586
+15   2.26027030690306353925
+16   2.19262534715601589825
+17   2.22607638251003971244
+18   2.13402053371529725167
+19   2.15675378051767610082
+20   2.11118040462618342310
+
+#threads	Min Elapsed Time (global)
+1   5.84
+2   3.73
+3   3.04
+4   2.36
+5   2.21
+6   2.13
+7   2.06
+8   2.08
+9   2.19
+10   2.48
+11   2.71
+12   2.79
+13   2.69
+14   2.97
+15   3.01
+16   3.08
+17   3.05
+18   3.15
+19   3.12
+20   3.17
+
+#threads	Min Elapsed Time (global)
+1   5.129699
+2   3.016790
+3   2.327376
+4   1.650204
+5   1.502865
+6   1.420178
+7   1.341770
+8   1.369144
+9   1.471700
+10   1.769013
+11   1.992977
+12   2.073943
+13   1.977536
+14   2.253162
+15   2.294503
+16   2.365291
+17   2.329748
+18   2.430247
+19   2.404631
+20   2.456539
+

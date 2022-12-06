@@ -1,0 +1,10 @@
+*****************************************************************************************
+Problem size (in number of elements): N=32768, MIN_SORT_SIZE=1024, MIN_MERGE_SIZE=1024
+Cut-off level:                        CUTOFF=50
+Number of threads in OpenMP:          OMP_NUM_THREADS=16
+*****************************************************************************************
+Initialization time in seconds: 0.683452
+Multisort execution time: 5.231821
+Check sorted data execution time: 0.011160
+Multisort program finished
+*****************************************************************************************

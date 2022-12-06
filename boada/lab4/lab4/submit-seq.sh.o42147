@@ -1,0 +1,12 @@
+icc  -g -std=c99 -Wall -O2 -fp-model precise -qopenmp_stubs multisort.c kernels.o -lm -o multisort-seq
+::::::::::::::
+multisort-seq_seq_boada-13.times.txt
+::::::::::::::
+*****************************************************************************************
+Problem size (in number of elements): N=32768, MIN_SORT_SIZE=1024, MIN_MERGE_SIZE=1024
+*****************************************************************************************
+Initialization time in seconds: 0.683507
+Multisort execution time: 5.186745
+Check sorted data execution time: 0.011131
+Multisort program finished
+*****************************************************************************************

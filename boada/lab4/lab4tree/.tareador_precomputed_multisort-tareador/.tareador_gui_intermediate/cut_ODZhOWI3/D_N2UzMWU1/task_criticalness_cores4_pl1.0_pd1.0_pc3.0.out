@@ -1,0 +1,4 @@
+speedup: 4.000
+1 MAIN_TAREADOR 1 0.0
+2 basicsort 2 1.80 len(1.00) dep(0.31) conc(0.50)
+3 basicmerge 3 1.20 len(0.00) dep(0.69) conc(0.50)
