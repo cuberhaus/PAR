@@ -2,37 +2,37 @@ Overview of whole program execution metrics:
 ===========================================================================
    Number of processors |          1 |          4 |          8 |         16
 ===========================================================================
-Elapsed time (sec)      |       2.93 |       2.28 |       2.14 |       2.17
-Speedup                 |       1.00 |       1.28 |       1.37 |       1.35
-Efficiency              |       1.00 |       0.32 |       0.17 |       0.08
+Elapsed time (sec)      |       2.89 |       1.23 |       0.83 |       0.70
+Speedup                 |       1.00 |       2.34 |       3.49 |       4.14
+Efficiency              |       1.00 |       0.59 |       0.44 |       0.26
 ===========================================================================
 
 Overview of the Efficiency metrics in parallel fraction:
 ==========================================================================================
                   Number of processors |          1 |          4 |          8 |         16
 ==========================================================================================
-Parallel fraction                      |     98.86% | 
+Parallel fraction                      |     98.69% | 
 ------------------------------------------------------
-Global efficiency                      |     99.06% |     31.83% |     17.11% |      8.40%
--- Parallelization strategy efficiency |     99.06% |     41.69% |     25.42% |     17.35%
-   -- Load balancing                   |    100.00% |     75.20% |     44.60% |     52.88%
-   -- In execution efficiency          |     99.06% |     55.44% |     57.00% |     32.82%
--- Scalability for computation tasks   |    100.00% |     76.35% |     67.30% |     48.39%
-   -- IPC scalability                  |    100.00% |     76.79% |     72.55% |     53.80%
-   -- Instruction scalability          |    100.00% |     99.86% |     99.67% |     99.29%
-   -- Frequency scalability            |    100.00% |     99.57% |     93.07% |     90.59%
+Global efficiency                      |     98.95% |     58.79% |     44.51% |     26.70%
+-- Parallelization strategy efficiency |     98.95% |     73.17% |     63.29% |     54.13%
+   -- Load balancing                   |    100.00% |     93.39% |     88.86% |     88.16%
+   -- In execution efficiency          |     98.95% |     78.35% |     71.22% |     61.40%
+-- Scalability for computation tasks   |    100.00% |     80.35% |     70.34% |     49.32%
+   -- IPC scalability                  |    100.00% |     82.13% |     75.92% |     55.07%
+   -- Instruction scalability          |    100.00% |     99.83% |     99.62% |     99.19%
+   -- Frequency scalability            |    100.00% |     97.99% |     93.00% |     90.28%
 ==========================================================================================
 
 Statistics about explicit tasks in parallel fraction
 ========================================================================================================================
                             Number of processors |               1 |               4 |               8 |              16
 ========================================================================================================================
-Number of explicit tasks executed (total)        |          1000.0 |          4000.0 |          8000.0 |         16000.0
+Number of explicit tasks executed (total)        |          2000.0 |          8000.0 |         16000.0 |         32000.0
 LB (number of explicit tasks executed)           |             1.0 |             1.0 |             1.0 |             1.0
-LB (time executing explicit tasks)               |             1.0 |            0.97 |            0.91 |            0.92
-Time per explicit task (average)                 |         1897.98 |          534.03 |          318.19 |          255.15
-Overhead per explicit task (synch %)             |            0.37 |          243.18 |          485.41 |          683.39
-Overhead per explicit task (sched %)             |            0.66 |            0.74 |             1.2 |             1.8
-Number of taskwait/taskgroup (total)             |          2000.0 |          2000.0 |          2000.0 |          2000.0
+LB (time executing explicit tasks)               |             1.0 |            0.93 |            0.89 |            0.88
+Time per explicit task (average)                 |         1405.99 |          435.89 |          247.61 |          174.97
+Overhead per explicit task (synch %)             |            0.25 |           35.08 |            54.9 |           80.49
+Overhead per explicit task (sched %)             |            0.51 |            0.65 |            1.18 |            2.04
+Number of taskwait/taskgroup (total)             |          3000.0 |          3000.0 |          3000.0 |          3000.0
 ========================================================================================================================
 
