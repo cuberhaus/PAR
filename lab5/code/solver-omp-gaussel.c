@@ -38,7 +38,7 @@ double solve (double *u, double *unew, unsigned sizex, unsigned sizey) {
     // We use this if to check whether the function is called by the Jacobi method or the Gauss
     // If u == unew then it's Gauss otherwise we are using the Jacobi method
     if (u == unew) {
-	int nblocksj = nblocksi;
+	int nblocksj = 160;
 	int next[nblocksi][16];
 	next[0][0] = nblocksj;
 	for (int i = 1; i < nblocksi; i++) next[i][0] = 0;
