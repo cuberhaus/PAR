@@ -17,6 +17,7 @@ void copy_mat (double *u, double *v, unsigned sizex, unsigned sizey) {
     #pragma omp parallel
     #pragma omp single
     {
+      #pragma omp taskloop firstprivate(nblocksi, nblocksj)
       for (int blocki=0; blocki <nblocksi; ++blocki) {
 	      int i_start = lowerb(blocki, nblocksi, sizex);
 	      int i_end = upperb(blocki, nblocksi, sizex);
