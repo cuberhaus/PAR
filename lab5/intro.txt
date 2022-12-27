@@ -1,0 +1,2 @@
+Now, for each i block we have 2 new variables (i_start and i_end). And when calculating the starting value of a block we use the formula:
+	lowerb(id, p, n) = (id*(n/p) + (id < (n%p) ? id : n%p) )
