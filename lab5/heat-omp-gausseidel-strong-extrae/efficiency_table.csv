@@ -1,0 +1,10 @@
+"Number of processes";1;4;8;16
+"Parallel fraction";95.580000
+"Global efficiency";99.846948;55.144035;45.655907;35.897517
+"-- Parallelization strategy efficiency";99.846948;77.748826;74.820890;71.088740
+" -- Load balancing";100.000000;91.620699;86.665058;90.893536
+" -- In execution efficiency";99.846948;84.859456;86.333399;78.210996
+"-- Scalability for computation tasks";100.000000;70.925875;61.020268;50.496769
+" -- IPC scalability";100.000000;95.021480;94.087731;89.995757
+" -- Instruction scalability";100.000000;74.883968;69.841533;61.965011
+" -- Frequency scalability";100.000000;99.676794;92.859716;90.551372
