@@ -25,12 +25,14 @@ export function SortPage() {
 
   const initArray = useCallback(() => {
     if (!mod) return;
-    const ptr = mod._malloc(arraySize * 4);
-    mod.ccall('initialize', 'void', ['number', 'number'], [ptr, arraySize]);
-    const view = new Int32Array(mod.HEAP32.buffer, ptr, arraySize);
-    const copy = new Int32Array(view);
-    mod._free(ptr);
-    setData(copy);
+    // Fisher-Yates shuffle in JS (avoids wasm32 long/UB issues in C)
+    const arr = new Int32Array(arraySize);
+    for (let i = 0; i < arraySize; i++) arr[i] = i + 1;
+    for (let i = arraySize - 1; i > 0; i--) {
+      const j = Math.floor(Math.random() * (i + 1));
+      const tmp = arr[i]; arr[i] = arr[j]; arr[j] = tmp;
+    }
+    setData(arr);
     setSorted(false);
     setTime(0);
   }, [mod, arraySize]);

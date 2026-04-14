@@ -30,7 +30,7 @@ server {
 
     location ~* \.(wasm)$ {
         types { application/wasm wasm; }
-        add_header Cache-Control "public, max-age=31536000, immutable";
+        add_header Cache-Control "no-cache";
     }
 
     location ~* \.(js|css|svg|png|jpg|ico)$ {

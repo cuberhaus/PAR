@@ -138,12 +138,13 @@ void multisort(T *data, T *tmp, long n, long min_sort_size, long min_merge_size)
  */
 EMSCRIPTEN_KEEPALIVE
 void initialize(T *data, long n) {
-    for (long i = 0; i < n; i++) {
-        if (i == 0) {
-            data[i] = (T)(n * 104723L % 2147483647L);
-        } else {
-            data[i] = (T)(((long)data[i - 1] + 1) * i * 104723L) % n;
-        }
+    /* Fill with 1..n then Fisher-Yates shuffle for a nice bar-chart visual. */
+    for (long i = 0; i < n; i++) data[i] = (T)(i + 1);
+    unsigned long seed = 104723UL;
+    for (long i = n - 1; i > 0; i--) {
+        seed = seed * 6364136223846793005UL + 1442695040888963407UL;
+        long j = (long)((seed >> 33) % ((unsigned long)i + 1));
+        T tmp = data[i]; data[i] = data[j]; data[j] = tmp;
     }
 }
 

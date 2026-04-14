@@ -26,6 +26,11 @@ docker:
 docker-build:
 	docker compose build
 
+docker-rebuild:
+	docker compose down
+	docker compose build --no-cache
+	docker compose up -d
+
 # Run tests
 test:
 	cd web && npm run test
