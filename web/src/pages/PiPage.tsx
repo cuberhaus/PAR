@@ -45,10 +45,14 @@ export function PiPage() {
     if (!chartRef.current || convergence.length === 0) return;
     const canvas = chartRef.current;
     const ctx = canvas.getContext('2d')!;
+    const dpr = window.devicePixelRatio || 1;
     const w = 600;
     const h = 300;
-    canvas.width = w;
-    canvas.height = h;
+    canvas.width = w * dpr;
+    canvas.height = h * dpr;
+    canvas.style.width = w + 'px';
+    canvas.style.height = h + 'px';
+    ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
     const pad = { top: 30, right: 20, bottom: 40, left: 60 };
 
     ctx.fillStyle = '#0a0a0f';

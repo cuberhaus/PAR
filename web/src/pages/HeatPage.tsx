@@ -88,10 +88,14 @@ export function HeatPage() {
     if (!chartRef.current || residuals.length === 0) return;
     const canvas = chartRef.current;
     const ctx = canvas.getContext('2d')!;
+    const dpr = window.devicePixelRatio || 1;
     const w = 400;
     const h = 150;
-    canvas.width = w;
-    canvas.height = h;
+    canvas.width = w * dpr;
+    canvas.height = h * dpr;
+    canvas.style.width = w + 'px';
+    canvas.style.height = h + 'px';
+    ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
 
     ctx.fillStyle = '#12121a';
     ctx.fillRect(0, 0, w, h);
