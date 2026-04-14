@@ -1,2 +1,9 @@
 ._*
 .DS_Store
+
+# WASM build output
+web/public/wasm/
+
+# Node / Vite
+web/node_modules/
+web/dist/
