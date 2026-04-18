@@ -1,5 +1,6 @@
 ._*
 .DS_Store
+*.o
 
 # WASM build output
 web/public/wasm/
